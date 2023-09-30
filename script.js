@@ -18,7 +18,7 @@ fetch(csvFilePath)
 
                 for (var i = 1; i <= 10; i++) {
                     var filteredData = parsedData.filter(function (row) {
-                        return row.cluster === i;
+                        return row.cluster === i - 1;
                     });
 
                     var xData = filteredData.map(function (row) {
