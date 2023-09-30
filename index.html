@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>ACM Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+
 </head>
 <body>
-Test
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<nav class="navbar navbar-dark custom-bg-black">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+        <img src="data/images/Waterloo_Logo.png" height="60"
+             class="d-inline-block align-middle" alt="">
+        &nbsp; ACM Fellow Citations Visualization</a>
+</nav>
+
+<!--<div id="scatter-plot" style="width: 2000px; height: 1000px;"></div>-->
+<!--<div id="infoBox" class="alert alert-warning m-5" style="display:none;">-->
+<!--    <strong>Author Name:</strong> <span id="authorName"></span><br>-->
+<!--    <strong>Citation:</strong> <span id="citation"></span><br>-->
+<!--    <strong>Cluster:</strong> <span id="cluster"></span><br>-->
+<!--    <strong>Keywords:</strong> <span id="keywords"></span>-->
+<!--</div>-->
+
+<div style="position: relative;">
+    <div id="scatter-plot" style="width: 2000px; height: 1000px;"></div>
+    <div id="infoBox" class="alert alert-warning m-5"
+         style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 600px;"><strong>Author
+        Name:</strong> <span id="authorName"></span><br>
+        <strong>Citation:</strong> <span id="citation"></span><br>
+        <strong>Cluster:</strong> <span id="cluster"></span><br>
+        <strong>Keywords:</strong> <span id="keywords"></span>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

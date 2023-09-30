@@ -1,0 +1,67 @@
+#scatterplot {
+    background-color: #f0f0f0;
+}
+
+circle {
+    fill: #3498db;
+    stroke: #2980b9;
+    stroke-width: 1;
+    transition: fill 0.2s;
+}
+
+circle:hover {
+    fill: #e74c3c;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip-text {
+    font-size: 12px;
+}
+
+circle:hover + .tooltip {
+    opacity: 1;
+}
+
+circle {
+    transition: fill 0.2s, transform 0.2s;
+}
+
+.tooltip {
+    top: -30px;
+    left: 10px;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip:hover {
+    opacity: 1;
+}
+
+.axis-label {
+    font-size: 14px;
+}
+
+.custom-bg-black {
+    background-color: black;
+}
+
+a.modebar-btn {
+    font-size: 35px !important;
+}
+
+.modebar-container {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+}
