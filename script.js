@@ -37,7 +37,6 @@ fetch(csvFilePath)
                             citation: row["Citation"]
                         };
                     });
-
                     var trace = {
                         x: xData,
                         y: yData,
@@ -82,7 +81,6 @@ fetch(csvFilePath)
                     plot_bgcolor: '#FDF7F0'
                 };
 
-                var infoBox = document.getElementById('infoBox');
                 Plotly.newPlot(
                     'scatter-plot',
                     traces,
@@ -94,16 +92,27 @@ fetch(csvFilePath)
                         displayModeBar: true
                     }
                 );
-
+                var infoBox = document.getElementById('infoBox');
                 var plotContainer = document.getElementById('scatter-plot');
+
+                var clusterData = [];
+
+                // Add a trace number property to each custom data object
+                traces.forEach(function (trace, i) {
+                    trace.customdata.forEach(function (dataObj) {
+                        dataObj.traceNumber = i;
+                    });
+                });
+
                 plotContainer.on('plotly_click', function (eventData) {
                     var pointIndex = eventData.points[0].pointIndex;
-                    var selectedData = customDataArray[pointIndex];
+                    var selectedData = eventData.points[0].customdata;
+                    var traceNumber = selectedData.traceNumber;
 
                     document.getElementById('authorName').textContent = selectedData.authorName;
                     document.getElementById('citation').textContent = selectedData.citation;
-                    document.getElementById('cluster').textContent = clusterData[pointIndex];
-                    document.getElementById('keywords').textContent = keywordsData[pointIndex];
+                    document.getElementById('cluster').textContent = '' + (traceNumber + 1); // Adding 1 to match cluster numbering
+                    document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex]; // Get keywords from the corresponding trace
 
                     infoBox.style.display = 'block';
                 });
