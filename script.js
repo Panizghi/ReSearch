@@ -111,8 +111,8 @@ fetch(csvFilePath)
 
                     document.getElementById('authorName').textContent = selectedData.authorName;
                     document.getElementById('citation').textContent = selectedData.citation;
-                    document.getElementById('cluster').textContent = '' + (traceNumber + 1); // Adding 1 to match cluster numbering
-                    document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex]; // Get keywords from the corresponding trace
+                    document.getElementById('cluster').textContent = '' + (traceNumber + 1);
+                    document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
 
                     infoBox.style.display = 'block';
                 });
