@@ -37,6 +37,7 @@ fetch(csvFilePath)
                             citation: row["Citation"]
                         };
                     });
+
                     var trace = {
                         x: xData,
                         y: yData,
@@ -45,7 +46,7 @@ fetch(csvFilePath)
                         customdata: customDataArray,
                         hovertemplate: 'Author Name: %{customdata.authorName}<br>Citation: %{customdata.citation}<br>Cluster: ' + i + '<br>Keywords: %{text}',
                         marker: {
-                            size: 5,
+                            size: 10,
                             colorscale: 'Jet',
                         },
                         type: 'scatter',
@@ -66,6 +67,16 @@ fetch(csvFilePath)
                         showgrid: true,
                         zeroline: false,
                         showticklabels: false,
+                    },
+                    hoverlabel: {
+                        font: {
+                            size: 20,
+                        },
+                    },
+                    legend: {
+                        font: {
+                            size: 25,
+                        },
                     },
                     modebar: {
                         orientation: 'h',
@@ -92,12 +103,18 @@ fetch(csvFilePath)
                         displayModeBar: true
                     }
                 );
+
+                // Add custom CSS to position the mode bar at the top left (northwest)
+                var modeBar = document.querySelector('.modebar-container');
+                modeBar.style.position = 'absolute';
+                modeBar.style.left = '-860px'; // Adjust left position as needed
+                modeBar.style.top = '10px'; // Adjust top position as needed
+
                 var infoBox = document.getElementById('infoBox');
                 var plotContainer = document.getElementById('scatter-plot');
 
                 var clusterData = [];
 
-                // Add a trace number property to each custom data object
                 traces.forEach(function (trace, i) {
                     trace.customdata.forEach(function (dataObj) {
                         dataObj.traceNumber = i;
@@ -124,7 +141,7 @@ fetch(csvFilePath)
                     console.log(zoomFactor)
                     console.log('sdfsadffsadfsadadsfsadf')
                     if (isNaN(zoomFactor)) {
-                        newMarkerSize = 5
+                        newMarkerSize = 10
                     } else if (zoomFactor < 6) {
                         var newMarkerSize = 20 / zoomFactor;
                     }
