@@ -1,5 +1,9 @@
 var csvFilePath = 'data/umap_visualization.csv';
 
+function closeInfoBox() {
+    infoBox.style.display = 'none';
+}
+
 fetch(csvFilePath)
     .then(function (response) {
         if (!response.ok) {
@@ -104,22 +108,22 @@ fetch(csvFilePath)
                     }
                 );
 
-                // Add custom CSS to position the mode bar at the top left (northwest)
                 var modeBar = document.querySelector('.modebar-container');
                 modeBar.style.position = 'absolute';
-                modeBar.style.left = '-860px'; // Adjust left position as needed
-                modeBar.style.top = '10px'; // Adjust top position as needed
+                modeBar.style.left = '-860px';
+                modeBar.style.top = '10px';
 
-                var infoBox = document.getElementById('infoBox');
                 var plotContainer = document.getElementById('scatter-plot');
-
                 var clusterData = [];
 
                 traces.forEach(function (trace, i) {
+
                     trace.customdata.forEach(function (dataObj) {
                         dataObj.traceNumber = i;
                     });
                 });
+
+                var infoBox = document.getElementById('infoBox');
 
                 plotContainer.on('plotly_click', function (eventData) {
                     var pointIndex = eventData.points[0].pointIndex;

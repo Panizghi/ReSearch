@@ -5,6 +5,8 @@
     <title>ACM Visualization</title>
     <link rel="icon" href="data/images/fav.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <script src="https://cdn.plot.ly/plotly-2.26.0.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
@@ -31,11 +33,16 @@
 <div style="position: relative;">
     <div id="scatter-plot" style="width: 2000px; height: 1000px;"></div>
     <div id="infoBox" class="alert alert-warning m-5"
-         style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 600px;"><strong>Author
-        Name:</strong> <span id="authorName"></span><br>
-        <strong>Citation:</strong> <span id="citation"></span><br>
-        <strong>Cluster:</strong> <span id="cluster"></span><br>
-        <strong>Keywords:</strong> <span id="keywords"></span>
+         style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 600px;">
+        <button type="button" class="close btn btn-outline-danger" aria-label="Close" onclick="closeInfoBox()"
+                style="position: absolute; top: 5px; right: 5px;">
+             <i class="fa-solid fa-xmark"></i>
+        </button>
+        <strong style="font-size: 20px;">Author Name:</strong> <span id="authorName"
+                                                                     style="font-size: 20px;"></span><br>
+        <strong style="font-size: 20px;">Citation:</strong> <span id="citation" style="font-size: 20px;"></span><br>
+        <strong style="font-size: 20px;">Cluster:</strong> <span id="cluster" style="font-size: 20px;"></span><br>
+        <strong style="font-size: 20px;">Keywords:</strong> <span id="keywords" style="font-size: 20px;"></span>
     </div>
 </div>
 
