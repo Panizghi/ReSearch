@@ -74,7 +74,7 @@ fetch(csvFilePath)
                     },
                     hoverlabel: {
                         font: {
-                            size: 20,
+                            size: 15,
                         },
                     },
                     legend: {
