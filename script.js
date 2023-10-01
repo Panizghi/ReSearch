@@ -75,7 +75,7 @@ fetch(csvFilePath)
                     },
                     legend: {
                         font: {
-                            size: 25,
+                            size: 20,
                         },
                     },
                     modebar: {
@@ -143,7 +143,7 @@ fetch(csvFilePath)
                     if (isNaN(zoomFactor)) {
                         newMarkerSize = 10
                     } else if (zoomFactor < 6) {
-                        var newMarkerSize = 20 / zoomFactor;
+                        var newMarkerSize = 50 / zoomFactor;
                     }
 
                     Plotly.update('scatter-plot', {
