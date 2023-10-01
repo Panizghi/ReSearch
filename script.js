@@ -234,7 +234,6 @@ function plot() {
                     modeBar.style.top = '10px';
 
                     var plotContainer = document.getElementById('scatter-plot');
-                    var clusterData = [];
 
                     traces.forEach(function (trace, i) {
 
@@ -274,12 +273,10 @@ function plot() {
                             'marker.size': newMarkerSize
                         });
                     });
-                }
-                ,
+                },
                 error: function (error) {
                     console.error('Error parsing CSV:', error);
                 }
-                ,
             });
         })
         .catch(function (error) {
