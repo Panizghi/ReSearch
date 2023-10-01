@@ -20,6 +20,16 @@
         <img src="data/images/Waterloo_Logo.png" height="60"
              class="d-inline-block align-middle" alt="">
         &nbsp; ACM Fellow Citations Visualization</a>
+
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" id="authorSearchInput" placeholder="Search Author">
+
+        <div class="center-div">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="button" onclick="searchAuthor()">Search</button>
+            <button class="btn btn-outline-danger" type="button" id="resetButton">Reset Chart</button>
+        </div>
+
+    </form>
 </nav>
 
 <!--<div id="scatter-plot" style="width: 2000px; height: 1000px;"></div>-->
@@ -36,7 +46,7 @@
          style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 600px;">
         <button type="button" class="close btn btn-outline-danger" aria-label="Close" onclick="closeInfoBox()"
                 style="position: absolute; top: 5px; right: 5px;">
-             <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-xmark"></i>
         </button>
         <strong style="font-size: 20px;">Author Name:</strong> <span id="authorName"
                                                                      style="font-size: 20px;"></span><br>
