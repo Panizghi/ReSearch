@@ -1,5 +1,6 @@
 var csvFilePath = 'data/umap_visualization.csv';
 var traces;
+var parsedData;
 
 function closeInfoBox() {
     infoBox.style.display = 'none';
@@ -12,9 +13,55 @@ function searchName() {
         return;
     }
 
-    var selectedDataPoints = [];
-    var customDataArray = [];
-    var tracesOfSelectedPoints = [];
+    traces = [];
+
+    for (var i = 1; i <= 10; i++) {
+        var filteredData = parsedData.filter(function (row) {
+            return row.cluster === i - 1;
+        });
+
+        var xData = filteredData.map(function (row) {
+            return row.x;
+        });
+        var yData = filteredData.map(function (row) {
+            return row.y;
+        });
+        var keywordsData = filteredData.map(function (row) {
+            return row.keywords;
+        });
+
+        var customDataArray = filteredData.map(function (row) {
+            return {
+                name: row["Full Name"],
+                citation: row["Citation"]
+            };
+        });
+
+        var trace = {
+            x: xData,
+            y: yData,
+            mode: 'markers',
+            text: keywordsData,
+            customdata: customDataArray,
+            hovertemplate: '<b>Name</b>: %{customdata.name}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + i + '<br><b>Keywords</b>: %{text}',
+            marker: {
+                size: customDataArray.map(row => row.name.toLowerCase().includes(searchInput.toLowerCase()) ? 15 : 7),
+                colorscale: 'Jet',
+            },
+            type: 'scatter',
+            name: 'Cluster ' + i
+        };
+
+        trace.marker.color = customDataArray.map(row => {
+            if (row.name.toLowerCase().includes(searchInput.toLowerCase())) {
+                return 'rgba(0, 0, 255, 1)';
+            } else {
+                return 'rgba(0,0,0,0.30)';
+            }
+        });
+
+        traces.push(trace);
+    }
 
     var layout = {
         xaxis: {
@@ -31,7 +78,7 @@ function searchName() {
         },
         hoverlabel: {
             font: {
-                size: 20,
+                size: 15,
             },
         },
         legend: {
@@ -48,74 +95,45 @@ function searchName() {
             y: 0
         },
         hovermode: 'closest',
-        showlegend: false,
+        showlegend: true,
         scrollZoom: true,
-        plot_bgcolor: '#FDF7F0'
+        plot_bgcolor: '#FDF7F0',
+        dragmode: 'pan'
     };
-
-    for (var i = 0; i < traces.length; i++) {
-        var trace = traces[i];
-        var selectedTrace = {
-            x: [],
-            y: [],
-            mode: 'markers',
-            type: 'scatter',
-            customdata: [],
-            hovertemplate: '<b>Name</b>: %{customdata.name}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + (i + 1) + '<br><b>Keywords</b>: %{customdata.keywords}',
-            name: trace.name,
-            marker: {
-                size: 25,
-                colorscale: 'Jet',
-            },
-        };
-
-        customDataArray = trace.customdata;
-
-        for (var j = 0; j < customDataArray.length; j++) {
-            var name = customDataArray[j].name.toLowerCase();
-
-            if (name.includes(searchInput.toLowerCase())) {
-                var customDataArrayy = {
-                    name: customDataArray[j].name,
-                    citation: customDataArray[j].citation,
-                    keywords: trace.text[j]
-                };
-
-                selectedDataPoints.push(j);
-                selectedTrace.x.push(trace.x[j]);
-                selectedTrace.y.push(trace.y[j]);
-                selectedTrace.customdata.push(customDataArrayy);
-
-                tracesOfSelectedPoints.push(selectedTrace);
-            }
-        }
-    }
 
     Plotly.newPlot(
         'scatter-plot',
-        tracesOfSelectedPoints,
+        traces,
         layout,
         {
-            responsive: true
+            scrollZoom: true,
+            modeBarButtonsToRemove: ['autoScale2d'],
+            displaylogo: false,
+            displayModeBar: true,
+            responsive: true,
         }
     );
 
-    // var modeBar = document.querySelector('.modebar-container');
-    // modeBar.style.position = 'absolute';
-    // modeBar.style.left = '-860px';
-    // modeBar.style.top = '10px';
+    var plotContainer = document.getElementById('scatter-plot');
 
-    var plotContainer2 = document.getElementById('scatter-plot');
-    plotContainer2.on('plotly_click', function (eventData) {
-        var regex = /\d+/;
+    traces.forEach(function (trace, i) {
 
+        trace.customdata.forEach(function (dataObj) {
+            dataObj.traceNumber = i;
+        });
+    });
+
+    var infoBox = document.getElementById('infoBox');
+
+    plotContainer.on('plotly_click', function (eventData) {
+        var pointIndex = eventData.points[0].pointIndex;
         var selectedData = eventData.points[0].customdata;
-        var clusterName = eventData.points[0].data.name;
+        var traceNumber = selectedData.traceNumber;
 
         document.getElementById('name').textContent = selectedData.name;
         document.getElementById('citation').textContent = selectedData.citation;
-        document.getElementById('cluster').textContent = clusterName.match(regex);
-        document.getElementById('keywords').textContent = selectedData.keywords;
+        document.getElementById('cluster').textContent = '' + (traceNumber + 1);
+        document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
 
         infoBox.style.display = 'block';
     });
@@ -142,7 +160,7 @@ function plot() {
                 dynamicTyping: true,
                 complete: function (results) {
 
-                    var parsedData = results.data;
+                    parsedData = results.data;
                     traces = [];
 
                     for (var i = 1; i <= 10; i++) {
@@ -175,7 +193,7 @@ function plot() {
                             customdata: customDataArray,
                             hovertemplate: '<b>Name</b>: %{customdata.name}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + i + '<br><b>Keywords</b>: %{text}',
                             marker: {
-                                size:7,
+                                size: 7,
                                 colorscale: 'Jet',
                             },
                             type: 'scatter',
