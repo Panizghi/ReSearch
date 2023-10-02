@@ -175,7 +175,7 @@ function plot() {
                             customdata: customDataArray,
                             hovertemplate: '<b>Name</b>: %{customdata.name}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + i + '<br><b>Keywords</b>: %{text}',
                             marker: {
-                                size: 10,
+                                size:7,
                                 colorscale: 'Jet',
                             },
                             type: 'scatter',
@@ -268,7 +268,7 @@ function plot() {
                         if (isNaN(zoomFactor)) {
                             newMarkerSize = 10
                         } else if (zoomFactor < 6) {
-                            var newMarkerSize = 50 / zoomFactor;
+                            var newMarkerSize = 20 / zoomFactor;
                         }
 
                         Plotly.update('scatter-plot', {
