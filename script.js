@@ -263,18 +263,18 @@ function plot() {
                         infoBox.style.display = 'block';
                     });
 
-                    plotContainer.on('plotly_relayout', function (eventData) {
-                        var zoomFactor = eventData['xaxis.range[1]'] - eventData['xaxis.range[0]'];
-                        if (isNaN(zoomFactor)) {
-                            newMarkerSize = 10
-                        } else if (zoomFactor < 6) {
-                            var newMarkerSize = 20 / zoomFactor;
-                        }
-
-                        Plotly.update('scatter-plot', {
-                            'marker.size': newMarkerSize
-                        });
-                    });
+                    // plotContainer.on('plotly_relayout', function (eventData) {
+                    //     var zoomFactor = eventData['xaxis.range[1]'] - eventData['xaxis.range[0]'];
+                    //     if (isNaN(zoomFactor)) {
+                    //         newMarkerSize = 10
+                    //     } else if (zoomFactor < 6) {
+                    //         var newMarkerSize = 10 / zoomFactor;
+                    //     }
+                    //
+                    //     Plotly.update('scatter-plot', {
+                    //         'marker.size': newMarkerSize
+                    //     });
+                    // });
                 },
                 error: function (error) {
                     console.error('Error parsing CSV:', error);
