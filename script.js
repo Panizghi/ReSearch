@@ -91,17 +91,22 @@ function searchName() {
         }
     }
 
-    Plotly.newPlot('scatter-plot', tracesOfSelectedPoints, layout);
+    Plotly.newPlot(
+        'scatter-plot',
+        tracesOfSelectedPoints,
+        layout,
+        {
+            responsive: true
+        }
+    );
 
-    var modeBar = document.querySelector('.modebar-container');
-    modeBar.style.position = 'absolute';
-    modeBar.style.left = '-860px';
-    modeBar.style.top = '10px';
+    // var modeBar = document.querySelector('.modebar-container');
+    // modeBar.style.position = 'absolute';
+    // modeBar.style.left = '-860px';
+    // modeBar.style.top = '10px';
 
     var plotContainer2 = document.getElementById('scatter-plot');
     plotContainer2.on('plotly_click', function (eventData) {
-        console.log(eventData.points[0])
-        console.log('dasgsdgdakjjashahahjkhahasdfj')
         var regex = /\d+/;
 
         var selectedData = eventData.points[0].customdata;
@@ -224,14 +229,15 @@ function plot() {
                             scrollZoom: true,
                             modeBarButtonsToRemove: ['autoScale2d'],
                             displaylogo: false,
-                            displayModeBar: true
+                            displayModeBar: true,
+                            responsive: true
                         }
                     );
 
-                    var modeBar = document.querySelector('.modebar-container');
-                    modeBar.style.position = 'absolute';
-                    modeBar.style.left = '-860px';
-                    modeBar.style.top = '10px';
+                    // var modeBar = document.querySelector('.modebar-container');
+                    // modeBar.style.position = 'absolute';
+                    // modeBar.style.left = '-860px';
+                    // modeBar.style.top = '10px';
 
                     var plotContainer = document.getElementById('scatter-plot');
 
@@ -245,8 +251,6 @@ function plot() {
                     var infoBox = document.getElementById('infoBox');
 
                     plotContainer.on('plotly_click', function (eventData) {
-                        console.log(eventData.points[0])
-                        console.log('dasgsdgdakjjashahahjkhahasdfj')
                         var pointIndex = eventData.points[0].pointIndex;
                         var selectedData = eventData.points[0].customdata;
                         var traceNumber = selectedData.traceNumber;
@@ -261,8 +265,6 @@ function plot() {
 
                     plotContainer.on('plotly_relayout', function (eventData) {
                         var zoomFactor = eventData['xaxis.range[1]'] - eventData['xaxis.range[0]'];
-                        console.log(zoomFactor)
-                        console.log('sdfsadffsadfsadadsfsadf')
                         if (isNaN(zoomFactor)) {
                             newMarkerSize = 10
                         } else if (zoomFactor < 6) {

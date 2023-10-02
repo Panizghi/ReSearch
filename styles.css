@@ -65,9 +65,16 @@ a.modebar-btn {
     top: 5px;
     right: 50px;
 }
+
 .my-trace-class {
-  filter: blur(5px);
+    filter: blur(5px);
 }
+
 .center-div {
     text-align: center; /* Center the contents horizontally */
 }
+
+/*#scatter-plot {*/
+/*    width: 100%; !* Set the initial width to 100% *!*/
+/*    height: 400px; !* Set an initial height *!*/
+/*}*/
