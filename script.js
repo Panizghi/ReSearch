@@ -218,7 +218,8 @@ function plot() {
                         hovermode: 'closest',
                         showlegend: true,
                         scrollZoom: true,
-                        plot_bgcolor: '#FDF7F0'
+                        plot_bgcolor: '#FDF7F0',
+                        dragmode: 'pan'
                     };
 
                     Plotly.newPlot(
@@ -230,7 +231,7 @@ function plot() {
                             modeBarButtonsToRemove: ['autoScale2d'],
                             displaylogo: false,
                             displayModeBar: true,
-                            responsive: true
+                            responsive: true,
                         }
                     );
 
