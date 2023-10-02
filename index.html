@@ -22,10 +22,10 @@
         &nbsp; ACM Fellows' Citation Visualization</a>
 
     <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" id="authorSearchInput" placeholder="Search Author">
+        <input class="form-control mr-sm-2" type="text" id="nameSearchInput" placeholder="Search Name">
 
         <div class="center-div">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="button" onclick="searchAuthor()">Search</button>
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="button" onclick="searchName()">Search</button>
             <button class="btn btn-outline-danger" type="button" id="resetButton">Reset Chart</button>
         </div>
 
@@ -34,7 +34,7 @@
 
 <!--<div id="scatter-plot" style="width: 2000px; height: 1000px;"></div>-->
 <!--<div id="infoBox" class="alert alert-warning m-5" style="display:none;">-->
-<!--    <strong>Author Name:</strong> <span id="authorName"></span><br>-->
+<!--    <strong>Name:</strong> <span id="name"></span><br>-->
 <!--    <strong>Citation:</strong> <span id="citation"></span><br>-->
 <!--    <strong>Cluster:</strong> <span id="cluster"></span><br>-->
 <!--    <strong>Keywords:</strong> <span id="keywords"></span>-->
@@ -48,7 +48,7 @@
                 style="position: absolute; top: 5px; right: 5px;">
             <i class="fa-solid fa-xmark"></i>
         </button>
-        <strong style="font-size: 20px;">Author Name:</strong> <span id="authorName"
+        <strong style="font-size: 20px;">Name:</strong> <span id="name"
                                                                      style="font-size: 20px;"></span><br>
         <strong style="font-size: 20px;">Citation:</strong> <span id="citation" style="font-size: 20px;"></span><br>
         <strong style="font-size: 20px;">Cluster:</strong> <span id="cluster" style="font-size: 20px;"></span><br>

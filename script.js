@@ -5,8 +5,8 @@ function closeInfoBox() {
     infoBox.style.display = 'none';
 }
 
-function searchAuthor() {
-    var searchInput = document.getElementById("authorSearchInput").value;
+function searchName() {
+    var searchInput = document.getElementById("nameSearchInput").value;
     if (searchInput.length < 3) {
         alert("Please enter at least 3 letters to search.");
         return;
@@ -61,7 +61,7 @@ function searchAuthor() {
             mode: 'markers',
             type: 'scatter',
             customdata: [],
-            hovertemplate: '<b>Author Name</b>: %{customdata.authorName}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + (i + 1) + '<br><b>Keywords</b>: %{customdata.keywords}',
+            hovertemplate: '<b>Name</b>: %{customdata.name}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + (i + 1) + '<br><b>Keywords</b>: %{customdata.keywords}',
             name: trace.name,
             marker: {
                 size: 25,
@@ -72,11 +72,11 @@ function searchAuthor() {
         customDataArray = trace.customdata;
 
         for (var j = 0; j < customDataArray.length; j++) {
-            var authorName = customDataArray[j].authorName.toLowerCase();
+            var name = customDataArray[j].name.toLowerCase();
 
-            if (authorName.includes(searchInput.toLowerCase())) {
+            if (name.includes(searchInput.toLowerCase())) {
                 var customDataArrayy = {
-                    authorName: customDataArray[j].authorName,
+                    name: customDataArray[j].name,
                     citation: customDataArray[j].citation,
                     keywords: trace.text[j]
                 };
@@ -107,7 +107,7 @@ function searchAuthor() {
         var selectedData = eventData.points[0].customdata;
         var clusterName = eventData.points[0].data.name;
 
-        document.getElementById('authorName').textContent = selectedData.authorName;
+        document.getElementById('name').textContent = selectedData.name;
         document.getElementById('citation').textContent = selectedData.citation;
         document.getElementById('cluster').textContent = clusterName.match(regex);
         document.getElementById('keywords').textContent = selectedData.keywords;
@@ -157,7 +157,7 @@ function plot() {
 
                         var customDataArray = filteredData.map(function (row) {
                             return {
-                                authorName: row["Full Name"],
+                                name: row["Full Name"],
                                 citation: row["Citation"]
                             };
                         });
@@ -168,7 +168,7 @@ function plot() {
                             mode: 'markers',
                             text: keywordsData,
                             customdata: customDataArray,
-                            hovertemplate: '<b>Author Name</b>: %{customdata.authorName}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + i + '<br><b>Keywords</b>: %{text}',
+                            hovertemplate: '<b>Name</b>: %{customdata.name}<br><b>Citation</b>: %{customdata.citation}<br><b>Cluster</b>: ' + i + '<br><b>Keywords</b>: %{text}',
                             marker: {
                                 size: 10,
                                 colorscale: 'Jet',
@@ -251,7 +251,7 @@ function plot() {
                         var selectedData = eventData.points[0].customdata;
                         var traceNumber = selectedData.traceNumber;
 
-                        document.getElementById('authorName').textContent = selectedData.authorName;
+                        document.getElementById('name').textContent = selectedData.name;
                         document.getElementById('citation').textContent = selectedData.citation;
                         document.getElementById('cluster').textContent = '' + (traceNumber + 1);
                         document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
