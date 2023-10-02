@@ -33,7 +33,11 @@ function searchName() {
         var customDataArray = filteredData.map(function (row) {
             return {
                 name: row["Full Name"],
-                citation: row["Citation"]
+                citation: row["Citation"],
+                acmProfile: row["ACM Fellow Profile"],
+                googleScholarProfile: row["Google Scholar Profile"],
+                dblpProfile: row["DBLP profile"],
+                imgProfile: row["image_url"]
             };
         });
 
@@ -126,6 +130,8 @@ function searchName() {
     var infoBox = document.getElementById('infoBox');
 
     plotContainer.on('plotly_click', function (eventData) {
+        infoBox.style.display = 'none'
+
         var pointIndex = eventData.points[0].pointIndex;
         var selectedData = eventData.points[0].customdata;
         var traceNumber = selectedData.traceNumber;
@@ -134,9 +140,18 @@ function searchName() {
         document.getElementById('citation').textContent = selectedData.citation;
         document.getElementById('cluster').textContent = '' + (traceNumber + 1);
         document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
+        var imageElement = document.getElementById('image');
+
+        if (selectedData.imgProfile && selectedData.imgProfile !== 'nan') {
+            imageElement.src = selectedData.imgProfile;
+            imageElement.style.display = 'block';
+        } else {
+            imageElement.style.display = 'none';
+        }
 
         infoBox.style.display = 'block';
     });
+
 
 }
 
@@ -181,7 +196,11 @@ function plot() {
                         var customDataArray = filteredData.map(function (row) {
                             return {
                                 name: row["Full Name"],
-                                citation: row["Citation"]
+                                citation: row["Citation"],
+                                acmProfile: row["ACM Fellow Profile"],
+                                googleScholarProfile: row["Google Scholar Profile"],
+                                dblpProfile: row["DBLP profile"],
+                                imgProfile: row["image_url"]
                             };
                         });
 
@@ -270,6 +289,8 @@ function plot() {
                     var infoBox = document.getElementById('infoBox');
 
                     plotContainer.on('plotly_click', function (eventData) {
+                        infoBox.style.display = 'none'
+
                         var pointIndex = eventData.points[0].pointIndex;
                         var selectedData = eventData.points[0].customdata;
                         var traceNumber = selectedData.traceNumber;
@@ -278,6 +299,14 @@ function plot() {
                         document.getElementById('citation').textContent = selectedData.citation;
                         document.getElementById('cluster').textContent = '' + (traceNumber + 1);
                         document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
+                        var imageElement = document.getElementById('image');
+
+                        if (selectedData.imgProfile && selectedData.imgProfile !== 'nan') {
+                            imageElement.src = selectedData.imgProfile;
+                            imageElement.style.display = 'block';
+                        } else {
+                            imageElement.style.display = 'none';
+                        }
 
                         infoBox.style.display = 'block';
                     });
