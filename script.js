@@ -14,6 +14,7 @@ function searchName() {
     }
 
     traces = [];
+    var isFoundAnything = false
 
     for (var i = 1; i <= 10; i++) {
         var filteredData = parsedData.filter(function (row) {
@@ -58,6 +59,7 @@ function searchName() {
 
         trace.marker.color = customDataArray.map(row => {
             if (row.name.toLowerCase().includes(searchInput.toLowerCase())) {
+                isFoundAnything = true
                 return 'rgba(0, 0, 255, 1)';
             } else {
                 return 'rgba(0,0,0,0.30)';
@@ -65,6 +67,11 @@ function searchName() {
         });
 
         traces.push(trace);
+    }
+
+    if (!isFoundAnything) {
+        alert("No matching data found for the given search input.");
+        return;
     }
 
     var layout = {
