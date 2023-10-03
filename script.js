@@ -140,12 +140,34 @@ function searchName() {
         document.getElementById('citation').textContent = selectedData.citation;
         document.getElementById('cluster').textContent = '' + (traceNumber + 1);
         document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
+
+        function updateProfileLink(id, sectionId, profileData) {
+            var element = document.getElementById(id);
+            var section = document.getElementById(sectionId);
+
+            if (profileData) {
+                element.href = profileData;
+                element.style.display = 'inline-block';
+                section.style.display = 'inline-block';
+            } else {
+                element.style.display = 'none';
+                section.style.display = 'none';
+            }
+        }
+
+        updateProfileLink('googleScholarProfile', 'googleScholarSection', selectedData.googleScholarProfile);
+        updateProfileLink('acmProfile', 'acmSection', selectedData.acmProfile);
+        updateProfileLink('dblpProfile', 'dblpSection', selectedData.dblpProfile);
+
         var imageElement = document.getElementById('image');
+        var imageSection = document.getElementById('imageSection');
 
         if (selectedData.imgProfile && selectedData.imgProfile !== 'nan') {
+            imageSection.style.display = 'block'
             imageElement.src = selectedData.imgProfile;
             imageElement.style.display = 'block';
         } else {
+            imageSection.style.display = 'none'
             imageElement.style.display = 'none';
         }
 
@@ -299,12 +321,34 @@ function plot() {
                         document.getElementById('citation').textContent = selectedData.citation;
                         document.getElementById('cluster').textContent = '' + (traceNumber + 1);
                         document.getElementById('keywords').textContent = traces[traceNumber].text[pointIndex];
+
+                        function updateProfileLink(id, sectionId, profileData) {
+                            var element = document.getElementById(id);
+                            var section = document.getElementById(sectionId);
+
+                            if (profileData) {
+                                element.href = profileData;
+                                element.style.display = 'inline-block';
+                                section.style.display = 'inline-block';
+                            } else {
+                                element.style.display = 'none';
+                                section.style.display = 'none';
+                            }
+                        }
+
+                        updateProfileLink('googleScholarProfile', 'googleScholarSection', selectedData.googleScholarProfile);
+                        updateProfileLink('acmProfile', 'acmSection', selectedData.acmProfile);
+                        updateProfileLink('dblpProfile', 'dblpSection', selectedData.dblpProfile);
+
                         var imageElement = document.getElementById('image');
+                        var imageSection = document.getElementById('imageSection');
 
                         if (selectedData.imgProfile && selectedData.imgProfile !== 'nan') {
+                            imageSection.style.display = 'block'
                             imageElement.src = selectedData.imgProfile;
                             imageElement.style.display = 'block';
                         } else {
+                            imageSection.style.display = 'none'
                             imageElement.style.display = 'none';
                         }
 
