@@ -43,7 +43,7 @@
 <div style="position: relative;">
     <div id="scatter-plot" style="height: 90vh;"></div>
     <div id="infoBox" class="alert alert-warning m-5"
-         style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 600px;">
+         style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 30%; width: 30%;">
         <button type="button" class="close btn btn-outline-danger" aria-label="Close" onclick="closeInfoBox()"
                 style="position: absolute; top: 5px; right: 5px;">
             <i class="fa-solid fa-xmark"></i>
@@ -51,28 +51,28 @@
 
         <span id="imageSection">
             <img id="image" src="" alt=""
-                 style="width: 250px; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out;"><br>
+                 style="width: 250px; height: 200px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out; max-width: 100%;"><br>
         </span>
 
-        <strong style="font-size: 20px;">Name:</strong> <span id="name" style="font-size: 20px;"></span><br>
-        <strong style="font-size: 20px;">Citation:</strong> <span id="citation" style="font-size: 20px;"></span><br>
-        <strong style="font-size: 20px;">Cluster:</strong> <span id="cluster" style="font-size: 20px;"></span><br>
-        <strong style="font-size: 20px;">Keywords:</strong> <span id="keywords" style="font-size: 20px;"></span><br>
-        <strong style="font-size: 20px;">Profiles:</strong>
+        <strong style="font-size: 18px;">Name:</strong> <span id="name" style="font-size: 16px;"></span><br>
+        <strong style="font-size: 18px;">Citation:</strong> <span id="citation" style="font-size: 16px;"></span><br>
+        <strong style="font-size: 18px;">Cluster:</strong> <span id="cluster" style="font-size: 16px;"></span><br>
+        <strong style="font-size: 18px;">Keywords:</strong> <span id="keywords" style="font-size: 16px;"></span><br>
+        <strong style="font-size: 18px;">Profiles:</strong>
 
-        <span id="googleScholarSection">
+        <span id="googleScholarSection" style="font-size: 16px;">
             <a href="#" id="googleScholarProfile" target="_blank">
                 <img src="data/images/google-scholar.png" alt="Google Scholar" class="profile-icon">
                 Google Scholar
             </a>
         </span>
-        <span id="acmSection">
+        <span id="acmSection" style="font-size: 16px;">
             <a href="#" id="acmProfile" target="_blank">
                 <img src="data/images/amc.png" alt="ACM" class="profile-icon">
                 ACM Profile
             </a>
         </span>
-        <span id="dblpSection">
+        <span id="dblpSection" style="font-size: 16px;">
             <a href="#" id="dblpProfile" target="_blank">
                 <img src="data/images/dblp.png" alt="DBLP" class="profile-icon">
                 DBLP Profile
