@@ -1,9 +1,14 @@
 var csvFilePath = 'data/umap_visualization.csv';
 var traces;
 var parsedData;
+var descriptionBox = document.getElementById('descriptionBox');
 
 function closeInfoBox() {
     infoBox.style.display = 'none';
+}
+
+function closeDescriptionBox() {
+    descriptionBox.style.display = 'none';
 }
 
 function searchName() {

@@ -42,6 +42,28 @@
 
 <div style="position: relative;">
     <div id="scatter-plot" style="height: 90vh;"></div>
+    <div id="descriptionBox" class="alert alert-info m-5"
+         style="position: absolute; bottom: -20px; right: -30px; z-index: 999; max-width: 600px; width: 32%;">
+        <div style="top: 5px; left: 5px;">
+            <button type="button" class="close btn btn-outline-danger" aria-label="Close"
+                    onclick="closeDescriptionBox()"
+                    style="position: absolute; top: 5px; right: 5px;">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div style="margin-right: 30px">
+            This graph illustrates the citation patterns of ACM fellows, with data sourced from this
+            <a href="https://github.com/lintool/cs-big-cows">repository</a>. The process
+            begins by embedding citations using the Cohere model after undergoing data preprocessing. Dimensionality
+            reduction is then applied through UMAP, allowing visualization using the Plotly library. Data is further
+            clustered using the K-Means algorithm, and top keywords are extracted using tf-idf.
+            <br>
+            <br>
+            <strong>Note</strong>: You can click on each data point in the plot to access more information in addition
+            to the mouseovers.
+        </div>
+
+    </div>
     <div id="infoBox" class="alert alert-warning m-5"
          style="position: absolute; top: 0; left: 0; z-index: 999; display: none; max-width: 600px; width: 32%;">
         <button type="button" class="close btn btn-outline-danger" aria-label="Close" onclick="closeInfoBox()"
