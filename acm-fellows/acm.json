@@ -1,0 +1,19 @@
+{
+    "Name":["Robin Milner","A V Sreejith","Alan J. Perils","Audrey J Turner","Alexei A. Efros","Aaron Sidford"],
+    "Award":["ACM A. M. Turing Award","ACM India Doctoral Dissertation Award","ACM A. M. Turing Award","Outstanding Contribution to ACM Award","ACM Prize in Computing","ACM Doctoral Dissertation Award"],
+    "Year":[1991,2014,1966,1995,2016,2015],
+    "Region":["Europe","Asia","North America","North America","Europe","North America"],
+    "Average Citation per Article":[95,1,38,1,94,13],
+    "Citation Count":["9,201","7","1,821","1","9,199","839"],
+    "Publication Count":[97,7,48,1,98,64],
+    "Publication Years":["1971 - 2013","2010 - 2023","1954 - 2007","1995 - 1995","1999 - 2024","2013 - 2024"],
+    "Available for Download":[19,2,46,0,32,42],
+    "Average Downloads per Article":["1,706","45","734","0","3,691","229"],
+    "Downloads (6 weeks)":[403,0,786,0,666,397],
+    "Downloads (12 months)":["9,237","2","5,158","0","9,369","2,138"],
+    "Downloads (cumulative)":["32,421","90","33,779","0","118,112","9,616"],
+    "Image_URL":["/do/10.1145/contrib-81332515695/full/81332515695-1588898507063.jpg","/pb-assets/icons/DOs/default-profile-1543932446943.svg","/do/10.1145/contrib-81100086771/full/81100086771-1588680123313.jpg","/pb-assets/icons/DOs/default-profile-1543932446943.svg","/do/10.1145/contrib-81100604913/full/81100604913-1569829454860.jpg","/do/10.1145/contrib-81758701057/full/81758701057-1703038152690.jpg"],
+    "Co_Authors":["","","","","",""],
+    "Keywords":["","","","","",""],
+    "Publications":["An inductive characterization of matching in binding bigraphs, Bigraphical Categories, Computing Tomorrow: Future Research Directions in Computer Science, Stochastic Bigraphs, Categories, Software and Meaning, Bigraphs and Their Algebra","Algebraic characterizations and block product decompositions for first order logic and its infinitary quantifier extensions over countable words, First-Order Logic and Its Infinitary Quantifier Extensions over Countable Words, Block products for algebras over countable words and applications to logic, Limited Set quantifiers over Countable Linear Orderings, Non-definability of Languages by Generalized First-order Formulas over (N,+), Expressive Completeness for LTL With Modulo Counting and Group Quantifiers","The synthesis of algorithmic systems, Revised report on the algorithmic language ALGOL 60, FAC: A Functional APL Language, Another view of software (panel session), Special Feature: Epigrams on programming, Is APL a programming language or isn't it?","README.1st: SGML for writers and editors","MarioNette: self-supervised sprite learning, Diffusion self-guidance for controllable image generation, Differentiable blocks world: qualitative 3D decomposition by rendering primitives, Test-time training with masked autoencoders, Visual prompting via image inpainting, Scene completion using millions of photographs","Efficient Convex Optimization Requires Superlinear Memory, Sparsifying Generalized Linear Models, Near-Optimal Dynamic Rounding of Fractional Matchings in Bipartite Graphs, Stochastic bias-reduced gradient methods, Parallel submodular function minimization, Towards optimal effective resistance estimation"]
+ }

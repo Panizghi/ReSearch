@@ -50,7 +50,7 @@ response = session.get(url, headers=headers)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 # Locate the table and check if it exists
-table = soup.find('table', class_='awards-tables--fullWidth')
+table = soup.find('table', class_='awards-tables')
 if not table:
     print("Table not found!")
     exit(1)
@@ -75,7 +75,7 @@ rows.sort(key=lambda row: int(row[2]), reverse=True)
 # Handling file and checkpoint for resuming
 it = 0
 checkpoint = 'last_iteration.txt'
-fileName = 'acm_turings.csv'
+fileName = 'acm_turings2.csv'
 fileExist = os.path.isfile(fileName) and os.path.isfile(checkpoint)
 
 with open(fileName, 'a' if fileExist else 'w', newline='') as file:
