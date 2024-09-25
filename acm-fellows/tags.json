@@ -1,246 +1,166 @@
 {
     "Subject Areas": [
         {
-            "term": "111",
             "label": "Logic",
-            "count": 16,
-            "link": null
+            "count": 16
         },
         {
-            "term": "460",
             "label": "Program semantics",
-            "count": 12,
-            "link": null
+            "count": 12
         },
         {
-            "term": "108",
             "label": "Models of computation",
-            "count": 7,
-            "link": null
+            "count": 7
         },
         {
-            "term": "1199",
             "label": "Parallel computing models",
-            "count": 7,
-            "link": null
+            "count": 7
         },
         {
-            "term": "115",
             "label": "Semantics and reasoning",
-            "count": 7,
-            "link": null
+            "count": 7
         },
         {
-            "term": "1719",
             "label": "Semantics",
-            "count": 6,
-            "link": null
+            "count": 6
         },
         {
-            "term": "109",
             "label": "Formal languages and automata theory",
-            "count": 5,
-            "link": null
+            "count": 5
         },
         {
-            "term": "770",
             "label": "Lambda calculus",
-            "count": 5,
-            "link": null
+            "count": 5
         },
         {
-            "term": "397",
             "label": "Concurrency",
-            "count": 4,
-            "link": null
+            "count": 4
         },
         {
-            "term": "774",
             "label": "Lambda calculus",
-            "count": 4,
-            "link": null
+            "count": 4
         },
         {
-            "term": "680",
             "label": "Formal language definitions",
-            "count": 3,
-            "link": null
+            "count": 3
         },
         {
-            "term": "1716",
             "label": "Language types",
-            "count": 3,
-            "link": null
+            "count": 3
         },
         {
-            "term": "68",
             "label": "Document types",
-            "count": 2,
-            "link": null
+            "count": 2
         },
         {
-            "term": "714",
             "label": "Graph algorithms",
-            "count": 2,
-            "link": null
+            "count": 2
         },
         {
-            "term": "331",
             "label": "Mobile networks",
-            "count": 2,
-            "link": null
+            "count": 2
         },
         {
-            "term": "702",
             "label": "Trees",
-            "count": 2,
-            "link": null
+            "count": 2
         },
         {
-            "term": "333",
             "label": "Wireless access networks",
-            "count": 2,
-            "link": null
+            "count": 2
         },
         {
-            "term": "1202",
             "label": "Algebraic language theory",
-            "count": 1,
-            "link": null
+            "count": 1
         },
         {
-            "term": "100",
             "label": "Interaction design",
-            "count": 1,
-            "link": null
+            "count": 1
         },
         {
-            "term": "1222",
             "label": "Pattern matching",
-            "count": 1,
-            "link": null
+            "count": 1
         }
     ],
     "Keywords": [
         {
-            "term": "bigraph",
             "label": "bigraph",
-            "count": 4,
-            "link": "/keyword/bigraph?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 4
         },
         {
-            "term": "Bigraphs",
             "label": "Bigraphs",
-            "count": 3,
-            "link": "/keyword/Bigraphs?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 3
         },
         {
-            "term": "interaction",
             "label": "interaction",
-            "count": 3,
-            "link": "/keyword/interaction?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 3
         },
         {
-            "term": "bisimilarity",
             "label": "bisimilarity",
-            "count": 2,
-            "link": "/keyword/bisimilarity?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "CCS",
             "label": "CCS",
-            "count": 2,
-            "link": "/keyword/CCS?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "mobile computation",
             "label": "mobile computation",
-            "count": 2,
-            "link": "/keyword/mobile+computation?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "naming and reference",
             "label": "naming and reference",
-            "count": 2,
-            "link": "/keyword/naming+and+reference?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "pi calculus",
             "label": "pi calculus",
-            "count": 2,
-            "link": "/keyword/pi+calculus?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "process algebra",
             "label": "process algebra",
-            "count": 2,
-            "link": "/keyword/process+algebra?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "process calculus",
             "label": "process calculus",
-            "count": 2,
-            "link": "/keyword/process+calculus?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "reactive system",
             "label": "reactive system",
-            "count": 2,
-            "link": "/keyword/reactive+system?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "reduction rule",
             "label": "reduction rule",
-            "count": 2,
-            "link": "/keyword/reduction+rule?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "transition system",
             "label": "transition system",
-            "count": 2,
-            "link": "/keyword/transition+system?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "\u03bb-calculus",
             "label": "\u03bb-calculus",
-            "count": 2,
-            "link": "/keyword/%CE%BB-calculus?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 2
         },
         {
-            "term": "Action Graph",
             "label": "Action Graph",
-            "count": 1,
-            "link": "/keyword/Action+Graph?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 1
         },
         {
-            "term": "Action Structure",
             "label": "Action Structure",
-            "count": 1,
-            "link": "/keyword/Action+Structure?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 1
         },
         {
-            "term": "Bigraphical reactive systems",
             "label": "Bigraphical reactive systems",
-            "count": 1,
-            "link": "/keyword/Bigraphical+reactive+systems?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 1
         },
         {
-            "term": "Complete inductive characterization",
             "label": "Complete inductive characterization",
-            "count": 1,
-            "link": "/keyword/Complete+inductive+characterization?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 1
         },
         {
-            "term": "Control Rule",
             "label": "Control Rule",
-            "count": 1,
-            "link": "/keyword/Control+Rule?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 1
         },
         {
-            "term": "Directed bigraph",
             "label": "Directed bigraph",
-            "count": 1,
-            "link": "/keyword/Directed+bigraph?ContribRoleAndId=author:10.1145/contrib-81332515695&expand=all"
+            "count": 1
         }
     ]
 }
