@@ -44,7 +44,7 @@ url = 'https://awards.acm.org/turing/award-recipients'
 
 headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36' }
 # Send a GET request to the URL and parse the HTML content using BeautifulSoup
-respo
+response = requests.get(url, headers=headers)
 soup = BeautifulSoup(response.content, 'html.parser')
 
 # Find all the table rows (tr) in the table body (tbody)
