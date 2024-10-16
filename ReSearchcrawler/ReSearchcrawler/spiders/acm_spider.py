@@ -230,25 +230,18 @@ class ACMSpider(scrapy.Spider):
         return data_chart_data
 
 
+
+
     def save_profile_to_file(self, profile_data):
-        """Save the scraped profile to a CSV file."""
-        file_exists = os.path.isfile('acm_profiles.csv')
-        with open('acm_profiles.csv', mode='a', newline='') as file:
-            writer = csv.writer(file)
+        """Save the scraped profile to a JSONL file."""
+        jsonl_file = 'acm_profiles.jsonl'
 
-            if not file_exists:
-                # Write headers if file doesn't exist
-                writer.writerow([
-                    'Full Name', 'Profile URL', 'DL Link', 'Bibliometrics',
-                    'Co-Authors', 'Keywords', 'Publications', 'Bar Chart Data', 'Image URL'
-                ])
+        # Open the JSONL file in append mode
+        with open(jsonl_file, mode='a', encoding='utf-8') as file:
+                # Convert the profile data to a JSON string and write to the file
+                        json.dump(profile_data, file, ensure_ascii=False)
+                        file.write('\n')  # Newline separates each JSON object in a JSONL file
 
-            writer.writerow([
-                profile_data['full_name'], profile_data['profile_url'], profile_data['dl_link'],
-                json.dumps(profile_data['bibliometrics']), json.dumps(profile_data['co_authors']),
-                json.dumps(profile_data['keywords']), json.dumps(profile_data['publications']),
-                json.dumps(profile_data['bar_chart_data']), profile_data['image_url']
-            ])
             
 
         
