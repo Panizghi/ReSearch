@@ -49,30 +49,7 @@
                 "label": "Language types",
                 "count": 3
             },
-            {
-                "label": "Document types",
-                "count": 2
-            },
-            {
-                "label": "Graph algorithms",
-                "count": 2
-            },
-            {
-                "label": "Mobile networks",
-                "count": 2
-            },
-            {
-                "label": "Trees",
-                "count": 2
-            },
-            {
-                "label": "Wireless access networks",
-                "count": 2
-            },
-            {
-                "label": "Algebraic language theory",
-                "count": 1
-            },
+
             {
                 "label": "Interaction design",
                 "count": 1
