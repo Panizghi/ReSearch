@@ -1,10 +1,5 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-
 
 class ACMProfileItem(scrapy.Item):
     # Basic Info
@@ -28,8 +23,10 @@ class ACMProfileItem(scrapy.Item):
     doi = scrapy.Field()  # DOI of the publication (if available)
     citations = scrapy.Field()  # Number of citations for the publication
     downloads = scrapy.Field()  # Number of downloads for the publication
-
-    # Google Scholar Integration (optional)
-    google_scholar_url = scrapy.Field()  # Google Scholar profile URL
-    affiliation = scrapy.Field()  # Google Scholar affiliation
-    interests = scrapy.Field()  # Research interests from Google Scholar
+    publications = scrapy.Field()
+    bar_chart_data = scrapy.Field()
+    image_url = scrapy.Field()
+    # New fields for Google Scholar data
+    gsc_url = scrapy.Field()
+    affiliation = scrapy.Field()
+    interests = scrapy.Field()
