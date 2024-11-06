@@ -46,6 +46,7 @@ function searchName() {
                 imgProfile: row["image_url"]
             };
         });
+        var clusterName = (keywordsData[0] && keywordsData[0].split(',')[0]) || 'Unnamed Cluster';
 
         var trace = {
             x: xData,
@@ -59,7 +60,7 @@ function searchName() {
                 colorscale: 'Jet',
             },
             type: 'scatter',
-            name: 'Cluster ' + i
+            name: i + ') ' + clusterName
         };
 
         trace.marker.color = customDataArray.map(row => {
@@ -237,7 +238,8 @@ function plot() {
                                 imgProfile: row["image_url"]
                             };
                         });
-
+                        // form first charcter to first , 
+                        var clusterName = (keywordsData[0] && keywordsData[0].split(',')[0]) || 'Unnamed Cluster';
                         var trace = {
                             x: xData,
                             y: yData,
@@ -250,7 +252,7 @@ function plot() {
                                 colorscale: 'Jet',
                             },
                             type: 'scatter',
-                            name: 'Cluster ' + i
+                            name: i + ') ' + clusterName
                         };
                         traces.push(trace);
                     }
