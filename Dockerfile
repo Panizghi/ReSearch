@@ -12,3 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of your application files into the container
 COPY . .
+
+CMD [ "python", "ReSearchcrawler/acm_profiles_to_sql.py"]
