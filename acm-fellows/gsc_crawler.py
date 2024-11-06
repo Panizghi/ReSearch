@@ -3,6 +3,8 @@ from scholarly import scholarly, ProxyGenerator
 
 API_KEY = '2c0689f76068fc9463b07cac6970050e'
 
+# API_KEY = '2c0689
+
 components = ['name', 'scholar_id', 'affiliation', 'interests', 'citedby']
 pg = ProxyGenerator()
 pg.ScraperAPI(API_KEY)

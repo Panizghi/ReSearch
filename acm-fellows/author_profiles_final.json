@@ -1,0 +1,491 @@
+[
+    {
+        "Name": "Michael  Backes",
+        "Bibliometrics": {
+            "Average Citation per Article": "16",
+            "Citation count": "3,162",
+            "Publication counts": "195",
+            "Publication Years": "2002 - 2024",
+            "Available for Download": "80",
+            "Average Downloads per Article": "706",
+            "Downloads (6 weeks)": "1,025",
+            "Downloads (12 months)": "9,903",
+            "Downloads (cumulative)": "56,482"
+        },
+        "Image_URL": "/pb-assets/icons/DOs/default-profile-1543932446943.svg",
+        "Co_Authors": [],
+        "Keywords": [
+            {
+                "term": "81",
+                "label": "Cryptography",
+                "count": 35,
+                "link": null
+            },
+            {
+                "term": "58",
+                "label": "Security and privacy",
+                "count": 18,
+                "link": null
+            },
+            {
+                "term": "257",
+                "label": "Operating systems security",
+                "count": 10,
+                "link": null
+            },
+            {
+                "term": "119",
+                "label": "Machine learning",
+                "count": 9,
+                "link": null
+            },
+            {
+                "term": "110",
+                "label": "Computational complexity and cryptography",
+                "count": 8,
+                "link": null
+            },
+            {
+                "term": "1824",
+                "label": "Data encryption",
+                "count": 8,
+                "link": null
+            },
+            {
+                "term": "983",
+                "label": "Protocol testing and verification",
+                "count": 7,
+                "link": null
+            },
+            {
+                "term": "275",
+                "label": "Web application security",
+                "count": 6,
+                "link": null
+            },
+            {
+                "term": "381",
+                "label": "Computer crime",
+                "count": 5,
+                "link": null
+            },
+            {
+                "term": "234",
+                "label": "Public key (asymmetric) techniques",
+                "count": 5,
+                "link": null
+            },
+            {
+                "term": "964",
+                "label": "Public key encryption",
+                "count": 5,
+                "link": null
+            },
+            {
+                "term": "260",
+                "label": "Information flow control",
+                "count": 4,
+                "link": null
+            },
+            {
+                "term": "976",
+                "label": "Mobile platform security",
+                "count": 4,
+                "link": null
+            },
+            {
+                "term": "92",
+                "label": "Network protocols",
+                "count": 4,
+                "link": null
+            },
+            {
+                "term": "140",
+                "label": "Communication hardware, interfaces and storage",
+                "count": 3,
+                "link": null
+            },
+            {
+                "term": "59",
+                "label": "Networks",
+                "count": 3,
+                "link": null
+            },
+            {
+                "term": "281",
+                "label": "Privacy protections",
+                "count": 3,
+                "link": null
+            },
+            {
+                "term": "276",
+                "label": "Social network security and privacy",
+                "count": 3,
+                "link": null
+            },
+            {
+                "term": "106",
+                "label": "Computing / technology policy",
+                "count": 2,
+                "link": null
+            },
+            {
+                "term": "1709",
+                "label": "Formal methods",
+                "count": 2,
+                "link": null
+            }
+        ],
+        "Bar_Chart_Data": [
+            {
+                "year": "2002",
+                "count": 3
+            },
+            {
+                "year": "2003",
+                "count": 7
+            },
+            {
+                "year": "2004",
+                "count": 4
+            },
+            {
+                "year": "2005",
+                "count": 14
+            },
+            {
+                "year": "2006",
+                "count": 12
+            },
+            {
+                "year": "2007",
+                "count": 10
+            },
+            {
+                "year": "2008",
+                "count": 14
+            },
+            {
+                "year": "2009",
+                "count": 5
+            },
+            {
+                "year": "2010",
+                "count": 7
+            },
+            {
+                "year": "2011",
+                "count": 7
+            },
+            {
+                "year": "2012",
+                "count": 9
+            },
+            {
+                "year": "2013",
+                "count": 9
+            },
+            {
+                "year": "2014",
+                "count": 9
+            },
+            {
+                "year": "2015",
+                "count": 8
+            },
+            {
+                "year": "2016",
+                "count": 19
+            },
+            {
+                "year": "2017",
+                "count": 9
+            },
+            {
+                "year": "2018",
+                "count": 6
+            },
+            {
+                "year": "2019",
+                "count": 8
+            },
+            {
+                "year": "2020",
+                "count": 7
+            },
+            {
+                "year": "2021",
+                "count": 5
+            },
+            {
+                "year": "2022",
+                "count": 11
+            },
+            {
+                "year": "2023",
+                "count": 11
+            },
+            {
+                "year": "2024",
+                "count": 1
+            }
+        ],
+        "Contribution_Metrics": [],
+        "Publications": [
+           
+            {
+                "Title": "Simulating the Large-Scale Erosion of Genomic Privacy Over Time",
+                "Title_URL": "/doi/10.1109/TCBB.2018.2859380",
+                "Authors": [
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    },
+                    {
+                        "Name": "Pascal Berrang",
+                        "Profile_URL": "https://dl.acm.org/profile/81553134856"
+                    },
+                    {
+                        "Name": "Mathias Humbert",
+                        "Profile_URL": "https://dl.acm.org/profile/81481643941"
+                    },
+                    {
+                        "Name": "Xiaoyu Shen",
+                        "Profile_URL": "https://dl.acm.org/profile/99659320507"
+                    },
+                    {
+                        "Name": "Verena Wolf",
+                        "Profile_URL": "https://dl.acm.org/profile/81333491805"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "The dramatically decreasing costs of DNA sequencing have triggered more than a million humans to have their genotypes sequenced. Moreover, these individuals increasingly make their genomic data publicly available, thereby creating privacy threats for ...",
+                "Citations": "0",
+                "Downloads": "51"
+            },
+            {
+                "Title": "Better managed than memorized? studying the impact of managers on password strength and reuse",
+                "Title_URL": "/doi/10.5555/3277203.3277220",
+                "Authors": [
+                    {
+                        "Name": "Sanam Ghorbani Lyastani",
+                        "Profile_URL": "https://dl.acm.org/profile/99659306286"
+                    },
+                    {
+                        "Name": "Michael Schilling",
+                        "Profile_URL": "https://dl.acm.org/profile/99659306183"
+                    },
+                    {
+                        "Name": "Sascha Fahl",
+                        "Profile_URL": "https://dl.acm.org/profile/81501653525"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    },
+                    {
+                        "Name": "Sven Bugiel",
+                        "Profile_URL": "https://dl.acm.org/profile/81447603361"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "Despite their well-known security problems, passwords are still the incumbent authentication method for virtually all online services. To remedy the situation, users are very often referred to password managers as a solution to the password reuse and ...",
+                "Citations": "6",
+                "Downloads": "0"
+            },
+            {
+                "Title": "A Survey on Routing in Anonymous Communication Protocols",
+                "Title_URL": "/doi/10.1145/3182658",
+                "Authors": [
+                    {
+                        "Name": "Fatemeh Shirazi",
+                        "Profile_URL": "https://dl.acm.org/profile/99658656194"
+                    },
+                    {
+                        "Name": "Milivoj Simeonovski",
+                        "Profile_URL": "https://dl.acm.org/profile/99658657146"
+                    },
+                    {
+                        "Name": "Muhammad Rizwan Asghar",
+                        "Profile_URL": "https://dl.acm.org/profile/81490646255"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    },
+                    {
+                        "Name": "Claudia Diaz",
+                        "Profile_URL": "https://dl.acm.org/profile/81339496786"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "The Internet has undergone dramatic changes in the past 2 decades and now forms a global communication platform that billions of users rely on for their daily activities. While this transformation has brought tremendous benefits to society, it has also ...",
+                "Citations": "46",
+                "Downloads": "1,311"
+            },
+            {
+                "Title": "Tagvisor: A Privacy Advisor for Sharing Hashtags",
+                "Title_URL": "/doi/10.1145/3178876.3186095",
+                "Authors": [
+                    {
+                        "Name": "Yang Zhang",
+                        "Profile_URL": "https://dl.acm.org/profile/99659911248"
+                    },
+                    {
+                        "Name": "Mathias Humbert",
+                        "Profile_URL": "https://dl.acm.org/profile/81481643941"
+                    },
+                    {
+                        "Name": "Tahleen Rahman",
+                        "Profile_URL": "https://dl.acm.org/profile/99659259747"
+                    },
+                    {
+                        "Name": "Cheng-Te Li",
+                        "Profile_URL": "https://dl.acm.org/profile/81413602545"
+                    },
+                    {
+                        "Name": "Jun Pang",
+                        "Profile_URL": "https://dl.acm.org/profile/81548048889"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "Hashtag has emerged as a widely used concept of popular culture and campaigns, but its implications on people»s privacy have not been investigated so far. In this paper, we present the first systematic analysis of privacy issues induced by hashtags. We ...",
+                "Citations": "22",
+                "Downloads": "762"
+            },
+            {
+                "Title": "Stackelberg planning: towards effective leader-follower state space search",
+                "Title_URL": "/doi/10.5555/3504035.3504805",
+                "Authors": [
+                    {
+                        "Name": "Patrick Speicher",
+                        "Profile_URL": "https://dl.acm.org/profile/99659366018"
+                    },
+                    {
+                        "Name": "Marcel Steinmetz",
+                        "Profile_URL": "https://dl.acm.org/profile/99659083631"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    },
+                    {
+                        "Name": "Jörg Hoffmann",
+                        "Profile_URL": "https://dl.acm.org/profile/81100074257"
+                    },
+                    {
+                        "Name": "Robert Künnemann",
+                        "Profile_URL": "https://dl.acm.org/profile/99658618467"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "Inspired by work on Stackelberg security games, we introduce Stackelberg planning, where a leader player in a classical planning task chooses a minimum-cost action sequence aimed at maximizing the plan cost of a follower player in the same task. Such ...",
+                "Citations": "0",
+                "Downloads": "29"
+            },
+            {
+                "Title": "The ART of App Compartmentalization: Compiler-based Library Privilege Separation on Stock Android",
+                "Title_URL": "/doi/10.1145/3133956.3134064",
+                "Authors": [
+                    {
+                        "Name": "Jie Huang",
+                        "Profile_URL": "https://dl.acm.org/profile/99659082381"
+                    },
+                    {
+                        "Name": "Oliver Schranz",
+                        "Profile_URL": "https://dl.acm.org/profile/99658754035"
+                    },
+                    {
+                        "Name": "Sven Bugiel",
+                        "Profile_URL": "https://dl.acm.org/profile/81447603361"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "Third-party libraries are commonly used by app developers for alleviating the development efforts and for monetizing their apps. On Android, the host app and its third-party libraries reside in the same sandbox and share all privileges awarded to the ...",
+                "Citations": "17",
+                "Downloads": "532"
+            },
+            {
+                "Title": "Keep me Updated: An Empirical Study of Third-Party Library Updatability on Android",
+                "Title_URL": "/doi/10.1145/3133956.3134059",
+                "Authors": [
+                    {
+                        "Name": "Erik Derr",
+                        "Profile_URL": "https://dl.acm.org/profile/99659033435"
+                    },
+                    {
+                        "Name": "Sven Bugiel",
+                        "Profile_URL": "https://dl.acm.org/profile/81447603361"
+                    },
+                    {
+                        "Name": "Sascha Fahl",
+                        "Profile_URL": "https://dl.acm.org/profile/81501653525"
+                    },
+                    {
+                        "Name": "Yasemin Acar",
+                        "Profile_URL": "https://dl.acm.org/profile/82458648357"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "Third-party libraries in Android apps have repeatedly been shown to be hazards to the users' privacy and an amplification of their host apps' attack surface. A particularly aggravating factor to this situation is that the libraries' version included in ...",
+                "Citations": "111",
+                "Downloads": "1,108"
+            },
+            {
+                "Title": "A Stitch in Time: Supporting Android Developers in WritingSecure Code",
+                "Title_URL": "/doi/10.1145/3133956.3133977",
+                "Authors": [
+                    {
+                        "Name": "Duc Cuong Nguyen",
+                        "Profile_URL": "https://dl.acm.org/profile/99659214954"
+                    },
+                    {
+                        "Name": "Dominik Wermke",
+                        "Profile_URL": "https://dl.acm.org/profile/99659216087"
+                    },
+                    {
+                        "Name": "Yasemin Acar",
+                        "Profile_URL": "https://dl.acm.org/profile/82458648357"
+                    },
+                    {
+                        "Name": "Michael Backes",
+                        "Profile_URL": "https://dl.acm.org/profile/81100093619"
+                    },
+                    {
+                        "Name": "Charles Weir",
+                        "Profile_URL": "https://dl.acm.org/profile/81100610310"
+                    },
+                    {
+                        "Name": "Sascha Fahl",
+                        "Profile_URL": "https://dl.acm.org/profile/81501653525"
+                    }
+                ],
+                "Journal_Info": "No journal info available",
+                "DOI": "No DOI available",
+                "Abstract": "Despite security advice in the official documentation and an extensive body of security research about vulnerabilities and exploits, many developers still fail to write secure Android applications. Frequently, Android developers fail to adhere to ...",
+                "Citations": "66",
+                "Downloads": "853"
+            }
+            
+        ]
+    }
+]

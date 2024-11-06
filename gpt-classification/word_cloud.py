@@ -19,12 +19,14 @@ def generate_word_cloud(json_file, output_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='parse word cloud input award_name')
-    parser.add_argument('award_name', type=str,
-                        help='categories name')
+    
+    # Change the argument to be flag-based (optional-style argument)
+    parser.add_argument('--award_name', type=str, required=True, help='categories name')
+
     args = parser.parse_args()
     award_name = args.award_name
 
-    # convert to categories json to word cloud
+    # Convert to categories json to word cloud
     json_file = f'categories/{award_name}_categories.json' 
     output_file = f'word_cloud/{award_name}_word_cloud.jpg'  
     generate_word_cloud(json_file, output_file)

@@ -1,5 +1,5 @@
 # Use a Python base image with the desired version
-FROM python:3.9
+FROM python:3.12
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -12,3 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the rest of your application files into the container
 COPY . .
+
+CMD [ "python", "ReSearchcrawler/acm_profiles_to_sql.py"]
