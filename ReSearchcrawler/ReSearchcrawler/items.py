@@ -1,4 +1,3 @@
-
 import scrapy
 
 class ACMProfileItem(scrapy.Item):
@@ -23,10 +22,13 @@ class ACMProfileItem(scrapy.Item):
     doi = scrapy.Field()  # DOI of the publication (if available)
     citations = scrapy.Field()  # Number of citations for the publication
     downloads = scrapy.Field()  # Number of downloads for the publication
-    publications = scrapy.Field()
-    bar_chart_data = scrapy.Field()
-    image_url = scrapy.Field()
+
     # New fields for Google Scholar data
     gsc_url = scrapy.Field()
     affiliation = scrapy.Field()
     interests = scrapy.Field()
+
+    # Additional fields required by the pipeline
+    year = scrapy.Field()
+    type_of_award = scrapy.Field()
+    index = scrapy.Field()
