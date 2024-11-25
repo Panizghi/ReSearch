@@ -58,3 +58,28 @@ DOWNLOAD_DELAY = 10
 ITEM_PIPELINES = {
     "ReSearchcrawler.pipelines.ACMProfilePipeline": 300,
 }
+
+# settings.py
+
+ITEM_PIPELINES = {
+    'ReSearchcrawler.pipelines.ACMProfilePipeline': 300,  # Adjust the path as necessary
+}
+
+# Optional: Configure logging level to DEBUG for more verbose output
+LOG_LEVEL = 'INFO'
+
+
+# settings.py
+
+# Enable retry middleware
+RETRY_ENABLED = True
+RETRY_TIMES = 3  # Number of retries
+RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408]
+
+# Configure download delays to prevent getting blocked
+DOWNLOAD_DELAY = 2  # 2 seconds delay between requests
+
+# Enable AutoThrottle
+AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_START_DELAY = 1
+AUTOTHROTTLE_MAX_DELAY = 10
