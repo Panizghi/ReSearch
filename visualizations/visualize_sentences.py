@@ -8,6 +8,7 @@ from sentence_transformers import SentenceTransformer
 
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
+from sklearn.cluster import KMeans
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -23,7 +24,7 @@ def get_sbert_embeddings(sentences):
 
 
 def get_tsne_3d_reductions(embeddings):
-    tsne = TSNE(n_components=3, perplexity=4, random_state=42, metric="cosine")
+    tsne = TSNE(n_components=3, perplexity=4, metric="cosine")
     embeddings = tsne.fit_transform(embeddings)
     
     return embeddings
@@ -32,7 +33,11 @@ def get_tsne_3d_reductions(embeddings):
 def get_pca_reductions(embeddings):
     pca = PCA(n_components=50)
     embeddings = pca.fit_transform(embeddings)
-    # print(f"Explained variance by PCA: {sum(pca.explained_variance_ratio_):.2f}")
+
+
+def k_means_cluster(embeddings):
+    kmeans = KMeans(n_clusters=3)
+    kmeans.fit(embeddings)
 
 
 def visualize_3d_embeddings(embeddings):
