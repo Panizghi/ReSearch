@@ -1,9 +1,8 @@
-import json
+#import json
 import os
 import logging
 from scholarly import scholarly, ProxyGenerator
-import sys
-
+import json 
 class ACMProfilePipeline:
 
     def open_spider(self, spider):
@@ -14,8 +13,6 @@ class ACMProfilePipeline:
 
         # Set a limit for file size (optional)
         self.file_size_limit = 100 * 1024 * 1024  # 100 MB for each JSONL file
-
-        
 
         # Open the JSONL file in append mode
         self._open_jsonl_file()
@@ -53,8 +50,8 @@ class ACMProfilePipeline:
         """Process each item and append to the JSONL file."""
         unique_key = (item['full_name'], item['year'], item['type_of_award'])
 
-        # Check if this (full_name, year, type_of_award) tuple is already processed
-        logging.info(f"Processing: {unique_key}")
+        # Log the unique key being processed
+        logging.debug(f"Processing item: {unique_key}")
 
         # Fetch Google Scholar data for the researcher (if applicable)
         scholar_data = self._fetch_google_scholar_data(item['full_name'])
@@ -62,12 +59,14 @@ class ACMProfilePipeline:
             item['gsc_url'] = scholar_data['gsc_url']
             item['affiliation'] = scholar_data['affiliation']
             item['interests'] = scholar_data['interests']
+            logging.debug(f"Fetched Google Scholar data for {item['full_name']}")
         else:
             item['gsc_url'] = 'N/A'
             item['affiliation'] = 'N/A'
             item['interests'] = 'N/A'
+            logging.warning(f"No Google Scholar data found for {item['full_name']}")
 
-        # Write profile data as JSONL entry
+        # Prepare profile data for JSONL
         profile_data = {
             'full_name': item['full_name'],
             'year': item['year'],
@@ -87,6 +86,7 @@ class ACMProfilePipeline:
 
         # Append the profile data to the JSONL file and flush
         self._write_jsonl(profile_data)
+        logging.info(f"Successfully processed and saved: {unique_key}")
 
         # Save checkpoint
         self._save_checkpoint(item['index'])
@@ -107,7 +107,7 @@ class ACMProfilePipeline:
     def _fetch_google_scholar_data(self, name):
         """Fetch Google Scholar data using the `scholarly` package."""
         pg = ProxyGenerator()
-        pg.ScraperAPI('2c0689f76068fc9463b07cac6970050e')  # Replace with your ScraperAPI key
+        pg.ScraperAPI('c4cd1b1cd0d9137073a52e20003c06de')  # Replace with your ScraperAPI key
         scholarly.use_proxy(pg)
 
         try:
@@ -119,8 +119,8 @@ class ACMProfilePipeline:
                 'interests': ", ".join(author_data.get('interests', []))
             }
         except StopIteration:
-            logging.error(f"No Google Scholar data found for {name}")
+            logging.warning(f"No Google Scholar data found for {name}")
             return None
         except Exception as e:
-            logging.error(f"Error fetching Google Scholar data for {name}: {e}")
+            logging.error(f"Error fetching Google Scholar data for {name}: {e}", exc_info=True)
             return None

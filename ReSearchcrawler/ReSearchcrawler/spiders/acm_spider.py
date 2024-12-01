@@ -2,12 +2,48 @@ import scrapy
 from ReSearchcrawler.items import ACMProfileItem
 from bs4 import BeautifulSoup
 import logging
+import scrapy
+from ReSearchcrawler.items import ACMProfileItem
+from bs4 import BeautifulSoup
+import logging
 import json
 import os
 import requests
 import csv
 
-logging.getLogger('chardet.charsetprober').setLevel(logging.INFO)
+
+def get_random_user_agent():
+    """Returns a random user-agent string."""
+    return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+
+def retry_request(url, headers):
+    """Helper to send a request and handle retries."""
+    import requests
+    from requests.adapters import HTTPAdapter
+    from requests.packages.urllib3.util.retry import Retry
+
+    session = requests.Session()
+    retry = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504]
+    )
+    adapter = HTTPAdapter(max_retries=retry)
+    session.mount('http://', adapter)
+    session.mount('https://', adapter)
+
+    response = None
+
+    try:
+        response = session.get(url, headers=headers, timeout=10)
+        # response.raise_for_status()
+        # return response
+    except requests.RequestException as e:
+        logging.error(f"Request failed for {url}: {e}", exc_info=True)
+        # return None
+    finally:
+        session.close()
+        return response
 
 class ACMSpider(scrapy.Spider):
     name = "acm_spider"
@@ -24,6 +60,10 @@ class ACMSpider(scrapy.Spider):
             profile_url = row.xpath(".//td[1]//a/@href").get()
             dl_link_element = row.xpath(".//td[last()]//a/@href").get()
 
+            # Extract additional data like year and type_of_award if available
+            year = row.xpath(".//td[2]/text()").get()  # Example XPath; adjust as needed
+            type_of_award = row.xpath(".//td[3]/text()").get()  # Example XPath; adjust as needed
+
             if dl_link_element:
                 dl_link = response.urljoin(dl_link_element)
                 full_profile_url = response.urljoin(profile_url)
@@ -39,8 +79,11 @@ class ACMSpider(scrapy.Spider):
                         'recipient_name': recipient_name,
                         'profile_url': full_profile_url,
                         'dl_link': dl_link,
-                        'index': idx  # Track the index for checkpoint saving
-                    }
+                        'index': idx,  # Track the index for checkpoint saving
+                        'year': year,
+                        'type_of_award': type_of_award
+                    },
+                    errback=self.errback_handler
                 )
 
     def parse_dl_profile(self, response):
@@ -48,6 +91,9 @@ class ACMSpider(scrapy.Spider):
         recipient_name = response.meta['recipient_name']
         profile_url = response.meta['profile_url']
         dl_link = response.meta['dl_link']
+        index = response.meta['index']
+        year = response.meta['year']
+        type_of_award = response.meta['type_of_award']
 
         # Parse the response with BeautifulSoup
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -66,17 +112,17 @@ class ACMSpider(scrapy.Spider):
                 keywords=profile_data.get("Keywords"),
                 publications=profile_data.get("Publications"),
                 bar_chart_data=profile_data.get("Bar_Chart_Data"),
-                image_url=profile_data.get("Image_URL")
+                image_url=profile_data.get("Image_URL"),
+                year=year,
+                type_of_award=type_of_award,
+                index=index
             )
-
-            # Save to CSV/JSON after processing each profile
-            self.save_profile_to_file(item)
 
             # Yield the item to the pipeline
             self.logger.info(f"Scraped profile for {recipient_name}")
             yield item
         except Exception as e:
-            self.logger.error(f"Error parsing profile for {recipient_name}: {e}")
+            self.logger.error(f"Error parsing profile for {recipient_name}: {e}", exc_info=True)
 
     def extract_acm_profile(self, soup, dl_link):
         """Extract detailed profile data from the DL page."""
@@ -92,7 +138,7 @@ class ACMSpider(scrapy.Spider):
         profile_data['Keywords'] = self.extract_keywords(soup)
 
         # Extract publications
-        profile_data['Publications'] = extract_publications(dl_link)
+        profile_data['Publications'] = self.extract_publications(dl_link)
 
         # Extract image URL if present
         profile_data['Image_URL'] = soup.find('img', class_='profile-image')['src'] if soup.find('img', class_='profile-image') else None
@@ -148,7 +194,7 @@ class ACMSpider(scrapy.Spider):
                     }
                     keywords.append(keyword_info)
             except json.JSONDecodeError as e:
-                logging.error(f"Failed to parse JSON: {e}")
+                logging.error(f"Failed to parse JSON: {e}", exc_info=True)
         return keywords
 
     def extract_publications(self, dl_link):
@@ -163,8 +209,8 @@ class ACMSpider(scrapy.Spider):
                 paginated_url = f"{publications_url}&startPage={page_number}"
                 response = retry_request(paginated_url, headers)
                 
-                if response.status_code != 200:
-                    logging.error(f"Failed to retrieve page {page_number} for {paginated_url}")
+                if not response or response.status_code != 200:
+                    self.logger.error(f"Failed to retrieve page {page_number} for {paginated_url}")
                     break
 
                 soup = BeautifulSoup(response.content, 'html.parser')
@@ -172,7 +218,7 @@ class ACMSpider(scrapy.Spider):
                 # Extract publication data
                 pub_list_section = soup.find_all('li', class_='search__item issue-item-container')
                 if not pub_list_section:
-                    logging.error(f"No publication list found on page {page_number}")
+                    self.logger.info(f"No publication list found on page {page_number}")
                     break  # Exit if there are no more publications
 
                 for pub in pub_list_section:
@@ -198,21 +244,56 @@ class ACMSpider(scrapy.Spider):
                                     'Profile_URL': f"https://dl.acm.org{author_profile_url}"  # Ensure full URL
                                 })
 
+                    # Check if there is a button for more authors (collapsed)
+                    collapsed_authors_button = pub.find('button', class_='removed-items-count')
+                    if collapsed_authors_button:
+                        self.logger.warning(f"Additional authors may be hidden behind a collapsed view for publication: {pub_data.get('Title')}")
+
+                    # If no authors are found, fallback to 'No authors listed'
                     pub_data['Authors'] = authors if authors else "No authors listed"
 
-                    # Extract other metadata
-                    pub_data['Journal_Info'] = pub.find('span', class_='epub-section__title').text if pub.find('span', class_='epub-section__title') else "No journal info"
-                    pub_data['DOI'] = pub.find('span', class_='doi').text if pub.find('span', class_='doi') else "No DOI"
-                    pub_data['Citations'] = pub.find('span', class_='citation-count').text if pub.find('span', class_='citation-count') else "0"
-                    pub_data['Downloads'] = pub.find('span', class_='downloads-count').text if pub.find('span', class_='downloads-count') else "0"
+                    # Extract journal, article number, and pages
+                    details_tag = pub.find('div', class_='issue-item__detail')
+                    if details_tag:
+                        journal_info = details_tag.find('span', class_='epub-section__title')
+                        article_info = details_tag.find_all('span', class_='dot-separator') if details_tag else []
+                        pub_data['Journal_Info'] = journal_info.text.strip() if journal_info else "No journal info available"
+                        if len(article_info) > 0:
+                            pub_data['Article_No'] = article_info[0].text.strip()
+                        if len(article_info) > 1:
+                            pub_data['Pages'] = article_info[1].text.strip()
+
+                    # Extract DOI link
+                    doi_tag = details_tag.find('a', class_='issue-item__doi') if details_tag else None
+                    if doi_tag:
+                        doi_link = doi_tag['href'].strip()
+                        if not doi_link.startswith('https://'):
+                            doi_link = f"https://{doi_link}"
+                        pub_data['DOI'] = doi_link
+                    else:
+                        pub_data['DOI'] = "No DOI available"
+
+                    # Extract abstract
+                    abstract_tag = pub.find('div', class_='issue-item__abstract')
+                    if abstract_tag:
+                        pub_data['Abstract'] = abstract_tag.find('p').text.strip()
+
+                    # Extract citation and download metrics
+                    metrics_tag = pub.find('div', class_='issue-item__footer')
+                    if metrics_tag:
+                        citations = metrics_tag.find('span', class_='citation')
+                        downloads = metrics_tag.find('span', class_='metric')
+                        pub_data['Citations'] = citations.find('span').text.strip() if citations else "0"
+                        pub_data['Downloads'] = downloads.find('span').text.strip() if downloads else "0"
 
                     publications.append(pub_data)
 
                 page_number += 1  # Move to the next page
+
             return publications
 
         except Exception as e:
-            logging.error(f"Error fetching publications for {dl_link}: {e}")
+            self.logger.error(f"Error fetching publications for {dl_link}: {e}", exc_info=True)
             return []
 
     def extract_bar_chart_data(self, soup):
@@ -226,131 +307,9 @@ class ACMSpider(scrapy.Spider):
                     chart_data = json.loads(chart_data)
                     data_chart_data.extend(chart_data)
                 except json.JSONDecodeError as e:
-                    logging.error(f"Failed to parse bar chart data: {e}")
+                    self.logger.error(f"Failed to parse bar chart data: {e}", exc_info=True)
         return data_chart_data
 
-
-
-
-    def save_profile_to_file(self, profile_data):
-        """Save the scraped profile to a JSONL file."""
-        jsonl_file = 'acm_profiles.jsonl'
-
-        # Open the JSONL file in append mode
-        with open(jsonl_file, mode='a', encoding='utf-8') as file:
-                # Convert the profile data to a JSON string and write to the file
-                        json.dump(profile_data, file, ensure_ascii=False)
-                        file.write('\n')  # Newline separates each JSON object in a JSONL file
-
-            
-
-        
-
-def get_random_user_agent():
-    """Returns a random user-agent string."""
-    return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-
-def retry_request(url, headers):
-    """Helper to send a request and handle retries."""
-    return requests.get(url, headers=headers, timeout=10)
-
-def extract_publications(dl_url):
-    dl_url = f"{dl_url}/publications?Role=author"
-    try:
-        page_number = 1
-        publications = []
-        while True:
-            paginated_url = f"{dl_url}&startPage={page_number}"
-            headers = {'User-Agent': get_random_user_agent()}
-            response = retry_request(paginated_url, headers)
-            if response.status_code != 200:
-                logging.error(f"Failed to retrieve page {page_number} for {dl_url}")
-                break
-
-            soup = BeautifulSoup(response.content, 'html.parser')
-
-            # Extract publication data
-            pub_list_section = soup.find_all('li', class_='search__item issue-item-container')
-            if not pub_list_section:  # Check if the publication section is None or empty
-                logging.error(f"No publication list found on page {page_number}")
-                break  # Exit if there are no more publications
-
-            for pub in pub_list_section:
-                pub_data = {}
-
-                # Extract title and link
-                title_tag = pub.find('h5', class_='issue-item__title').find('a')
-                if title_tag:
-                    pub_data['Title'] = title_tag.text.strip()
-                    pub_data['Title_URL'] = title_tag['href'].strip()
-
-                # Extract contributors/authors
-                # Locate the authors list using the <ul> tag with class 'loa'
-                author_list_section = pub.find('ul', class_='loa')
-                authors = []
-
-                # Ensure that we have found the authors list before iterating
-                if author_list_section:
-                    # Loop over the <li> tags within the list to extract visible authors
-                    for author_item in author_list_section.find_all('li'):
-                        # Find the <span> tag inside the <li> to extract the author's name
-                        author_link_tag = author_item.find('a')
-                        if author_link_tag and author_link_tag.text.strip():
-                            author_name = author_link_tag.text.strip()
-                            author_profile_url = author_link_tag['href'].strip()
-                            authors.append({
-                                'Name': author_name,
-                                'Profile_URL': f"https://dl.acm.org{author_profile_url}"  # Ensure full URL
-                            })
-
-                # Check if there is a button for more authors (collapsed)
-                collapsed_authors_button = pub.find('button', class_='removed-items-count')
-                if collapsed_authors_button:
-                    logging.warning(f"Additional authors may be hidden behind a collapsed view for publication: {pub_data.get('Title')}")
-
-                # If no authors are found, fallback to 'No authors listed'
-                pub_data['Authors'] = authors if authors else "No authors listed"
-
-                # Extract journal, article number, and pages
-                details_tag = pub.find('div', class_='issue-item__detail')
-                if details_tag:
-                    journal_info = details_tag.find('span', class_='epub-section__title')
-                    article_info = details_tag.find_all('span', class_='dot-separator') if details_tag else []
-                    pub_data['Journal_Info'] = journal_info.text.strip() if journal_info else "No journal info available"
-                    if len(article_info) > 0:
-                        pub_data['Article_No'] = article_info[0].text.strip()
-                    if len(article_info) > 1:
-                        pub_data['Pages'] = article_info[1].text.strip()
-
-                # Extract DOI link
-                doi_tag = details_tag.find('a', class_='issue-item__doi') if details_tag else None
-                if doi_tag:
-                    doi_link = doi_tag['href'].strip()
-                    if not doi_link.startswith('https://'):
-                        doi_link = f"https://{doi_link}"
-                    pub_data['DOI'] = doi_link
-                else:
-                    pub_data['DOI'] = "No DOI available"
-
-                # Extract abstract
-                abstract_tag = pub.find('div', class_='issue-item__abstract')
-                if abstract_tag:
-                    pub_data['Abstract'] = abstract_tag.find('p').text.strip()
-
-                # Extract citation and download metrics
-                metrics_tag = pub.find('div', class_='issue-item__footer')
-                if metrics_tag:
-                    citations = metrics_tag.find('span', class_='citation')
-                    downloads = metrics_tag.find('span', class_='metric')
-                    pub_data['Citations'] = citations.find('span').text.strip() if citations else "0"
-                    pub_data['Downloads'] = downloads.find('span').text.strip() if downloads else "0"
-
-                publications.append(pub_data)
-
-            page_number += 1  # Move to the next page
-
-        return publications
-
-    except Exception as e:
-        logging.error(f"Error fetching publications for {dl_url}: {e}")
-        return None
+    def errback_handler(self, failure):
+        """Handle request failures."""
+        self.logger.error(repr(failure))
