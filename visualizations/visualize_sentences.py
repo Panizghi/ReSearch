@@ -9,12 +9,18 @@ from sentence_transformers import SentenceTransformer
 from sklearn.manifold import TSNE
 from sklearn.decomposition import PCA
 from sklearn.cluster import KMeans
+from sklearn.preprocessing import MinMaxScaler
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
 ### Basic Functions (With Established Parameters)
+def scale_embeddings(embeddings):
+    scaler = MinMaxScaler()
+    embeddings = scaler.fit_transform(embeddings)
+    return embeddings
+
 
 def get_sbert_embeddings(sentences):
     model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -38,6 +44,9 @@ def get_pca_reductions(embeddings):
 def k_means_cluster(embeddings):
     kmeans = KMeans(n_clusters=3)
     kmeans.fit(embeddings)
+    labels = kmeans.labels_
+    centroids = kmeans.cluster_centers_
+    return labels, centroids
 
 
 def visualize_3d_embeddings(embeddings):

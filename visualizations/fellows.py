@@ -1,29 +1,14 @@
-import json
-
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import mplcursors
 
 import pandas as pd
+import numpy as np
 
 import visualize_sentences as vs
 
 
-# filepath = "ReSearchcrawler/ReSearchcrawler/acm_profiles.jsonl"
-
-# with open(filepath, "r") as f:
-#     fellows_data = [json.loads(line) for line in f]
-
-# sentences = []
-
-# for line in fellows_data:
-#     sentence = "Received an award {}. Affiliation is {}. Interests are {}.".format(
-#         line["citation"],
-#         line["affiliation"],
-#         line["interests"],
-#     )
-#     sentences.append(sentence)
-
+# READ DATA
 filepath = "data/acm_fellows.csv"
 
 sentences = []
@@ -44,24 +29,33 @@ for fellow in df.itertuples():
 
 print(sentences)
 
+
+# EMBEDDINGS AND CLUSTERING
 embeddings = vs.get_sbert_embeddings(sentences)
 # embeddings = vs.get_pca_reductions(embeddings)
 embeddings = vs.get_tsne_3d_reductions(embeddings)
+cluster_labels, cluster_centroids = vs.k_means_cluster(embeddings)
+embeddings = vs.scale_embeddings(embeddings)
 
+
+# OUTPUT TO CSV
+df_exp = df[["Last Name", "Given Name", "Citation"]]
+visualizations_data = np.column_stack((embeddings, cluster_labels, df_exp.to_numpy()))
+out_df = pd.DataFrame(visualizations_data, columns=["x", "y", "z", "cluster", "last name", "given name", "citation"])
+out_df.to_csv("visualization.csv")
+
+
+# MATPLOTLIB GRAPHING
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-scatter = ax.scatter(embeddings[:,0], embeddings[:,1], embeddings[:,2])
+scatter = ax.scatter(embeddings[:,0], embeddings[:,1], embeddings[:,2], c=cluster_labels)
 
 cursor = mplcursors.cursor(ax, hover=True)
 @cursor.connect("add")
-
 def on_add(sel):
     index = sel.index
     # sel.annotation.set_text(df.loc[index, "Last Name"])
     sel.annotation.set_text(df.loc[index, "Citation"])
 
-# for i, (x, y, z) in enumerate(embeddings):
-#     ax.scatter(x, y, z, label=f"Point {i}")
-#     # ax.text(x, y, z, f"{df.loc[i,"Last Name"]}", color='red')
 ax.set_title('3D Semantic Similarity Map')
 plt.show()
