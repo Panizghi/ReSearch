@@ -13,7 +13,7 @@ filepath = "data/acm_fellows.csv"
 
 sentences = []
 df = pd.read_csv(filepath)
-df=df.head(30)
+df=df.head(500)
 
 for fellow in df.itertuples():
     # sentence = "Received an award {}. Affiliation is {}. Interests are {}.".format(
@@ -48,7 +48,7 @@ out_df.to_csv("visualization.csv")
 # MATPLOTLIB GRAPHING
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-scatter = ax.scatter(embeddings[:,0], embeddings[:,1], embeddings[:,2], c=cluster_labels)
+scatter = ax.scatter(embeddings[:,0], embeddings[:,1], embeddings[:,2], c=cluster_labels, vmin=0, vmax=10, cmap="plasma")
 
 cursor = mplcursors.cursor(ax, hover=True)
 @cursor.connect("add")

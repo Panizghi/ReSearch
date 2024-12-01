@@ -42,7 +42,7 @@ def get_pca_reductions(embeddings):
 
 
 def k_means_cluster(embeddings):
-    kmeans = KMeans(n_clusters=3)
+    kmeans = KMeans(n_clusters=10)
     kmeans.fit(embeddings)
     labels = kmeans.labels_
     centroids = kmeans.cluster_centers_
