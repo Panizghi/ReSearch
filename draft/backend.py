@@ -155,6 +155,47 @@ async def visualize_embeddings():
     except Exception as e:
         return JSONResponse(status_code=500, content={"message": f"Error: {e}"})
 
+
+from fastapi import FastAPI, HTTPException
+import json
+
+app = FastAPI()
+
+@app.get("/get_profile")
+async def author_profile():
+    try:
+        # Load JSONL data
+        with open("data/acm_profiles.jsonl", "r") as f:
+            fellows_data = [json.loads(line) for line in f]
+
+        # Process and return author profiles
+        profiles = []
+        for fellow in fellows_data:
+            profiles.append({
+                "full_name": fellow.get("full_name"),
+                "profile_url": fellow.get("profile_url"),
+                "dl_link": fellow.get("dl_link"),
+                "bibliometrics": fellow.get("bibliometrics"),
+                "co_authors": fellow.get("co_authors", []),
+                "keywords": fellow.get("keywords", []),
+                "bar_chart_data": fellow.get("bar_chart_data", []),
+                "image_url": fellow.get("image_url", None),
+            })
+
+        return {"data": profiles}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error loading author profiles: {e}")
+
+
+
+
 if __name__ == "__main__":
     os.makedirs(PERSIST_DIR, exist_ok=True)
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    import sys
+    import uvicorn
+
+    # Dynamically resolve the module name for reload
+    module_name = __name__.split(".")[0]
+
+    # Pass the app as a module import string
+    uvicorn.run(f"{module_name}:app", host="127.0.0.1", port=8000, reload=True)
