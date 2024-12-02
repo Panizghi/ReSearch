@@ -119,7 +119,7 @@ async def search_with_scores(
                 results_with_abstract.append({
                     "title": doc.metadata.get("title", "Unknown Title"),
                     "url": doc.metadata.get("url", "No URL"),
-                    "content_snippet": doc.page_content[:100],
+                    "content_snippet": doc.page_content[:250],
                     "similarity_score": float(score),
                 })
 

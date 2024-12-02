@@ -21,7 +21,7 @@ def create_main_layout():
 def create_banner():
     return html.Div([
         html.A([
-            html.Img(src="./logo.png", alt="research analytics"),
+            html.Img(src="/assets/logo.png", alt="research analytics"),
             html.H3("research analytics")
         ], href="#", className="logo-banner"),
         
@@ -38,7 +38,7 @@ def create_search_section():
                 dcc.Input(
                     id='search-query',
                     type='text',
-                    placeholder="Search for keywords...",
+                    placeholder="Search for anything...",
                     debounce=True,
                     className="search-input"
                 ),
