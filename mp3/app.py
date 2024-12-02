@@ -1,10 +1,7 @@
 import plotly.express as px
 import pandas as pd
 
-from dash import Input, Output
-import plotly.express as px
-import pandas as pd
-from dash import Input, Output, Dash
+from dash import Input, Output, Dash, html, State
 
 # Create the Dash app instance here instead of importing it
 app = Dash(__name__)
