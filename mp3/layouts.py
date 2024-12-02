@@ -12,7 +12,15 @@ def create_main_layout():
         create_data_stores(),
         
         # Main content
-        html.Div(id='start-page', children=[], className='main-body'),
+        html.Div(id='start-page', children=[
+            # Add the tabs content here
+            create_tabs_content(),
+            # Add the graphs inside a div
+            html.Div([
+                dcc.Graph(id='tsne-graph', style={'width': '48%', 'display': 'inline-block'}),
+                dcc.Graph(id='umap-graph', style={'width': '48%', 'display': 'inline-block'})
+            ], id='graphs-container')
+        ], className='main-body'),
         
         # Footer
         create_footer()
@@ -32,21 +40,16 @@ def create_banner():
 
 def create_search_section():
     return html.Div([
+        html.H1(id='topic', children=[]),
         html.Div([
-            # Search container with autocomplete
-            html.Div([
-                html.Div([
-                    dcc.Input(
-                        id='search-query',
-                        type='text',
-                        placeholder="Search for keywords...",
-                        className="search-input",
-                        list="suggestion-list"
-                    ),
-                    html.Datalist(
-                        id='suggestion-list'
-                    ),
-                ], style={'flex': 1}),
+            html.Div([  # Search container
+                dcc.Input(
+                    id='search-query',
+                    type='text',
+                    placeholder="Search for anything...",
+                    debounce=True,
+                    className="search-input"
+                ),
                 html.Button(
                     'Search', 
                     id='search-button',
@@ -54,34 +57,8 @@ def create_search_section():
                     className="search-button"
                 )
             ], className="search-container"),
-            
-            # Filter section
-            html.Div([
-                dcc.Dropdown(
-                    id='author-dropdown',
-                    placeholder="Filter by Author...",
-                    className="filter-dropdown",
-                    searchable=True,
-                    clearable=True
-                ),
-                dcc.Dropdown(
-                    id='category-dropdown',
-                    placeholder="Filter by Category...",
-                    className="filter-dropdown",
-                    searchable=True,
-                    clearable=True
-                ),
-                dcc.Dropdown(
-                    id='location-dropdown',
-                    placeholder="Filter by Location...",
-                    className="filter-dropdown",
-                    searchable=True,
-                    clearable=True
-                )
-            ], className="filter-container")
-        ], className="search-and-filters"),
-        
-        html.Div(id='search-results', className="search-results")
+            html.Div(id='search-results', className="search-results")  # Results container
+        ], className="search-bar")
     ], className="search-wrapper")
 
 def create_data_stores():
