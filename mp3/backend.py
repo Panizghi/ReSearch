@@ -37,7 +37,7 @@ MODEL_NAME = "all-MiniLM-L6-v2"
 embedding_function = HuggingFaceBgeEmbeddings(model_name=MODEL_NAME)
 
 # Chroma persistent directory
-PERSIST_DIR = "./chroma_db_3"
+PERSIST_DIR = "./chroma_db_final"
 
 def get_text_collection(user_id: str):
     """
@@ -67,22 +67,42 @@ def scale_embeddings(embeddings):
     scaler = MinMaxScaler()
     return scaler.fit_transform(embeddings)
 
+def check_chroma_db():
+    try:
+        user_id = "default_user"
+        text_store = get_text_collection(user_id)
+        count = text_store._collection.count()
+        logger.info(f"Chroma DB check - Collection exists at: {PERSIST_DIR}")
+        logger.info(f"Chroma DB check - Number of documents: {count}")
+        
+        # Get a sample document if any exist
+        if count > 0:
+            sample = text_store._collection.peek()
+            logger.info(f"Chroma DB check - Sample document exists: {bool(sample)}")
+        return count
+    except Exception as e:
+        logger.error(f"Chroma DB check failed: {str(e)}")
+        return 0
+
+@app.on_event("startup")
+async def startup_event():
+    logger.info("Starting up the application...")
+    doc_count = check_chroma_db()
+    if doc_count == 0:
+        logger.error("No documents found in Chroma DB! Please ensure the database is properly initialized.")
+
 @app.get("/search_with_scores")
 async def search_with_scores(
     query: str = Query(..., description="Search query text"),
     k: int = Query(5, description="Number of results to fetch")
 ):
-    """
-    Perform a similarity search for a given query and return results with similarity scores.
-    Add suggestions for documents missing abstracts.
-    """
     try:
         user_id = "default_user"
         text_store = get_text_collection(user_id)
-
         results = text_store.similarity_search_with_score(query, k=k)
 
         if not results:
+            logger.warning("No matching results found.")
             return {"results": [], "message": "No matching results found."}
 
         results_with_abstract = []
@@ -93,20 +113,21 @@ async def search_with_scores(
                 suggestions.append({
                     "title": doc.metadata.get("title", "Unknown Title"),
                     "url": doc.metadata.get("url", "No URL"),
-                    "similarity_score": score
+                    "similarity_score": float(score),
                 })
             else:
                 results_with_abstract.append({
                     "title": doc.metadata.get("title", "Unknown Title"),
                     "url": doc.metadata.get("url", "No URL"),
                     "content_snippet": doc.page_content[:100],
-                    "similarity_score": score
+                    "similarity_score": float(score),
                 })
 
         response = {"results": results_with_abstract}
         if suggestions:
             response["suggestions"] = suggestions
 
+        logger.info(f"Search results: {response}")
         return response
 
     except Exception as e:
@@ -156,39 +177,6 @@ async def visualize_embeddings():
         return JSONResponse(status_code=500, content={"message": f"Error: {e}"})
 
 
-from fastapi import FastAPI, HTTPException
-import json
-
-app = FastAPI()
-
-@app.get("/get_profile")
-async def author_profile():
-    try:
-        # Load JSONL data
-        with open("data/acm_profiles.jsonl", "r") as f:
-            fellows_data = [json.loads(line) for line in f]
-
-        # Process and return author profiles
-        profiles = []
-        for fellow in fellows_data:
-            profiles.append({
-                "full_name": fellow.get("full_name"),
-                "profile_url": fellow.get("profile_url"),
-                "dl_link": fellow.get("dl_link"),
-                "bibliometrics": fellow.get("bibliometrics"),
-                "co_authors": fellow.get("co_authors", []),
-                "keywords": fellow.get("keywords", []),
-                "bar_chart_data": fellow.get("bar_chart_data", []),
-                "image_url": fellow.get("image_url", None),
-            })
-
-        return {"data": profiles}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error loading author profiles: {e}")
-
-
-
-
 if __name__ == "__main__":
     os.makedirs(PERSIST_DIR, exist_ok=True)
     import sys
@@ -196,6 +184,5 @@ if __name__ == "__main__":
 
     # Dynamically resolve the module name for reload
     module_name = __name__.split(".")[0]
-
     # Pass the app as a module import string
-    uvicorn.run(f"{module_name}:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run(f"{module_name}:app", host="127.0.0.1", port=8000, reload=True)  
