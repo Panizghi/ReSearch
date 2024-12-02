@@ -33,20 +33,19 @@ body {
 .logo-banner {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  gap: 1rem;
 }
 
 .logo-banner img {
-  height: 70px;
+  height: 2.5rem;
   width: auto;
-  margin-right: 1rem;
-  object-fit: contain;
 }
 
 .logo-banner h3 {
-  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent);
   margin: 0;
-  font-size: 1.3rem;
 }
 
 /* Search Section */
@@ -91,7 +90,7 @@ body {
 }
 
 .search-button:hover {
-  background-color: rgb(39,90,108);
+  background-color: #3651d3;
   transform: translateY(-1px);
 }
 
@@ -117,7 +116,7 @@ body {
 }
 
 .result-item h4 {
-  color: rgb(39,90,108);
+  color: var(--accent);
   margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
 }
@@ -128,7 +127,7 @@ body {
 }
 
 .result-item a {
-  color: rgb(39,90,108);
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   display: inline-flex;
@@ -140,25 +139,34 @@ body {
   text-decoration: underline;
 }
 
-/* Fix footer positioning */
-.app-layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+/* Filter Styles */
+.search-and-filters {
+    background: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
 }
 
-.main-content-wrapper {
-  flex: 1;
-  margin-bottom: 60px; /* Space for footer */
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(39,90,108);
-  padding: 0.2rem;
-  text-align: center;
-  z-index: 1000;
+.filter-dropdown {
+    width: 100%;
+}
+
+/* Style the dropdown menus */
+.Select-control {
+    border-radius: 8px !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+.Select-placeholder {
+    color: var(--text-secondary) !important;
 }

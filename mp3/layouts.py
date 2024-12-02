@@ -32,16 +32,21 @@ def create_banner():
 
 def create_search_section():
     return html.Div([
-        html.H1(id='topic', children=[]),
         html.Div([
-            html.Div([  # Search container
-                dcc.Input(
-                    id='search-query',
-                    type='text',
-                    placeholder="Search for anything...",
-                    debounce=True,
-                    className="search-input"
-                ),
+            # Search container with autocomplete
+            html.Div([
+                html.Div([
+                    dcc.Input(
+                        id='search-query',
+                        type='text',
+                        placeholder="Search for keywords...",
+                        className="search-input",
+                        list="suggestion-list"
+                    ),
+                    html.Datalist(
+                        id='suggestion-list'
+                    ),
+                ], style={'flex': 1}),
                 html.Button(
                     'Search', 
                     id='search-button',
@@ -49,8 +54,34 @@ def create_search_section():
                     className="search-button"
                 )
             ], className="search-container"),
-            html.Div(id='search-results', className="search-results")  # Results container
-        ], className="search-bar")
+            
+            # Filter section
+            html.Div([
+                dcc.Dropdown(
+                    id='author-dropdown',
+                    placeholder="Filter by Author...",
+                    className="filter-dropdown",
+                    searchable=True,
+                    clearable=True
+                ),
+                dcc.Dropdown(
+                    id='category-dropdown',
+                    placeholder="Filter by Category...",
+                    className="filter-dropdown",
+                    searchable=True,
+                    clearable=True
+                ),
+                dcc.Dropdown(
+                    id='location-dropdown',
+                    placeholder="Filter by Location...",
+                    className="filter-dropdown",
+                    searchable=True,
+                    clearable=True
+                )
+            ], className="filter-container")
+        ], className="search-and-filters"),
+        
+        html.Div(id='search-results', className="search-results")
     ], className="search-wrapper")
 
 def create_data_stores():

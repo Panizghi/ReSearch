@@ -1,7 +1,10 @@
 from dash.dependencies import Input, Output, State
+from dash import html, callback_context
 import requests
 from dash import html
 import json
+import pandas as pd
+import numpy as np
 
 def register_callbacks(app):
     @app.callback(
@@ -50,6 +53,3 @@ def register_callbacks(app):
                 print(f"Error in callback: {str(e)}")  # Debug print
                 return html.Div(f"Error: {str(e)}", style={"color": "red"})
         return "Enter a query and click Search."
-
-def empty_results_and_plots():
-    empty_plot = {'data': [], 'layout': {'height': 300}}

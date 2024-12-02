@@ -176,6 +176,20 @@ async def visualize_embeddings():
     except Exception as e:
         return JSONResponse(status_code=500, content={"message": f"Error: {e}"})
 
+def process_search_results(results):
+    if not results:
+        return {"results": [], "message": "No matching results found."}
+    
+    processed_results = []
+    for doc, score in results:
+        processed_results.append({
+            "title": doc.metadata.get("title", "Unknown Title"),
+            "url": doc.metadata.get("url", "No URL"),
+            "content_snippet": doc.page_content[:250],
+            "similarity_score": float(score)
+        })
+    
+    return {"results": processed_results}
 
 if __name__ == "__main__":
     os.makedirs(PERSIST_DIR, exist_ok=True)
