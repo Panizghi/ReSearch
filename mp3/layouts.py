@@ -30,7 +30,7 @@ def create_banner():
     return html.Div([
         html.A([
             html.Img(src="/assets/logo.png", alt="research analytics"),
-            html.H3("research analytics")
+            html.H3("Research analytics Dashboard")
         ], href="#", className="logo-banner"),
         
         html.Div([
