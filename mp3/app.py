@@ -7,8 +7,8 @@ from dash import Input, Output, Dash, html, State
 app = Dash(__name__)
 
 # Load the visualization data
-tsne_df = pd.read_csv('/Users/paniz/ReSearch/mp3/data/tsne_visualization.csv')
-umap_df = pd.read_csv('/Users/paniz/ReSearch/mp3/data/umap_visualization.csv')
+tsne_df = pd.read_csv('../data/tsne_visualization.csv')
+umap_df = pd.read_csv('../data/umap_visualization.csv')
 
 @app.callback(
     [Output('tsne-graph', 'figure'),

@@ -1,0 +1,536 @@
+,x,y,z,cluster,last name,given name,citation
+0,0.990442156791687,0.3075840473175049,0.5499808192253113,3,Hassan,Ahmed E.,For contributions to the quality assurance of large scale software systems
+1,0.6563668251037598,0.16714856028556824,0.5248043537139893,1,Pothen,Alex,"For contributions to and leadership in combinatorial scientific computing
+"
+2,0.516647219657898,0.0375121533870697,0.688156008720398,7,Kemper,Alfons,"For contributions to database management system technology
+"
+3,0.5234633684158325,0.31619903445243835,0.20891854166984558,1,Anandkumar,Anima,For contributions to tensor methods for probabilistic models and neural operators
+4,0.411665141582489,0.6053488850593567,0.8512691259384155,4,Sabharwal,Ashutosh,For the invention of full-duplex wireless and open-source wireless research platforms
+5,0.9520398378372192,0.3337481617927551,0.4631386995315552,3,Curtis,Bill,"For contributions to software process,  software measurement, and human factors in software engineering"
+6,0.5829850435256958,0.776572585105896,0.19561871886253357,5,Barak,Boaz,"For contributions to theoretical computer science, in particular cryptography and computational complexity, and service to the theory community"
+7,0.685461699962616,0.694868266582489,0.32702022790908813,5,de Supinski,Bronis R.,For contributions to the design of large-scale systems and their programming systems and software
+8,0.04004010558128357,0.6077938079833984,0.30585676431655884,2,Kuo,Chung C,"For contributions to technologies, applications, and mentorship in visual computing"
+9,0.4204871952533722,0.6060441732406616,0.1039070188999176,8,Daskalakis,Constantinos,"For fundamental contributions to algorithmic game theory, mechanism design, sublinear algorithms and theoretical machine learning"
+10,0.4858643412590027,0.2748029828071594,0.3007548451423645,1,Cortes,Corinna,"For theoretical and practical contributions to machine learning, industrial leadership, and service to the field"
+11,0.04036599397659302,0.5828198194503784,0.2704407572746277,2,Gotsman,Craig,"For contributions to computer graphics, geometry processing, and visual computing
+"
+12,0.009819000959396362,0.4950064718723297,0.07387283444404602,2,Mount,David M,For contributions to algorithms and data structures for geometric data analysis and retrieval
+13,0.015523403882980347,0.5690264701843262,0.2520511746406555,2,Zorin,Denis,"For contributions to computer graphics, geometry processing, and scientific 
+computing"
+14,0.36625468730926514,0.37528640031814575,0.7633059024810791,4,Yu,Dong,"For contributions in speech processing and deep learning applications
+"
+15,0.38879263401031494,0.30377793312072754,0.5673844814300537,9,Chi,Ed H.,"For contributions to machine learning and data mining techniques for social computing and recommender systems
+"
+16,0.994171142578125,0.44537898898124695,0.5364088416099548,3,Koushanfar,Farinaz,"For contributions to secure computing and privacy-preserving machine learning
+"
+17,0.33452922105789185,0.30156606435775757,0.39744699001312256,9,Li,Hang,For contributions to machine learning for search and dialogue
+18,0.9188623428344727,0.41346102952957153,0.5461095571517944,3,Hicks,Michael W,"For contributions to programming language design and implementation, program analysis, and software security."
+19,0.4616512954235077,0.32796353101730347,0.24206677079200745,9,Xing,Eric,"For contributions to algorithms, architectures, and applications in machine learning
+"
+20,0.2210286557674408,0.7015780210494995,0.5109068751335144,2,Sullivan,Gary J.,For contributions to video and image compression and leadership in its standardization
+21,0.37471285462379456,0.5020744204521179,0.3415129780769348,9,Navarro,Gonzalo,For theoretical and practical contributions to the fields of text searching and compact data structures
+22,0.43602484464645386,0.6574458479881287,0.7090778946876526,4,Zheng,Haitao,For contributions to wireless networking and mobile computing
+23,0.21205070614814758,0.7450805902481079,0.8431705236434937,4,Ishii,Hiroshi,For contributions to tangible user interfaces and to human-computer interaction
+24,0.8585687875747681,0.25722232460975647,0.5503661632537842,3,Mei,Hong,"For contributions to software engineering research and translation, and establishing  research standards in China"
+25,0.32882678508758545,0.3572089672088623,0.4287131428718567,9,Teevan,Jaime,"For contributions to human-computer interaction, information retrieval, and productivity"
+26,0.2726782262325287,0.6463508605957031,0.8588669300079346,4,Hong,Jason,For contributions to ubiquitous computing and to usable privacy and security
+27,0.4196997582912445,0.9981876611709595,0.5367717146873474,0,Stasko,John,"For contributions to the design, analysis, usage, and evaluation of software and information visualization"
+28,0.46563565731048584,0.36228078603744507,0.4151575267314911,9,Deb,Kalyanmoy,"For technical contributions in evolutionary  multi-objective optimization algorithms and multi-criterion decision support
+"
+29,0.1888541579246521,0.626911997795105,0.9017661809921265,4,Toyama,Kentaro,For contributions to the innovation and critique of digital technology for socio-economic development and social justice
+30,0.38194000720977783,0.7257933616638184,0.638502836227417,4,Fu,Kevin,"""For contributions to computer security, and especially to the secure engineering of medical devices.""
+"
+31,0.815555989742279,0.41573652625083923,0.6961187124252319,3,Ceze,Luis H,For contributions to developing new architectures and programming systems for emerging applications and computing technologies
+32,0.4181133508682251,1.0,0.536226749420166,0,Agrawala,Maneesh,"For contributions to visual communication through computer graphics, human-computer interaction, and information visualization"
+33,0.8299826383590698,0.413876473903656,0.6731565594673157,3,Hermenegildo,Manuel V,"For contributions to program analysis, verification, parallelism, logic programming, and the IMDEA Software Institute"
+34,0.14101451635360718,0.3868906497955322,0.25599998235702515,2,Pollefeys,Marc,"For contributions to geometric computer vision and applications to AR/VR/MR, robotics, and autonomous vehicles"
+35,0.23664136230945587,0.6380550861358643,0.7905721664428711,4,Beaudouin-Lafon,Michel,"For contributions to human-computer interaction, instrumental interaction and generative theory, and community leadership"
+36,0.45656925439834595,0.1545826494693756,0.43398478627204895,9,Chawla,Nitesh,"For contributions to machine learning research for imbalanced data, graphs, and interdisciplinary innovations"
+37,0.5350231528282166,0.1268296241760254,0.729742705821991,7,Boncz,Peter,"For contributions to the design of columnar, main-memory, and vectorized database systems"
+38,0.801458477973938,0.5832824110984802,0.07939141988754272,5,Qureshi,Moinuddin,For contributions to memory hierarchy design
+39,0.7584503889083862,0.4359755516052246,0.8349217176437378,6,Atienza Alonso,David,For contributions to the design of high-performance integrated systems and ultra-low power edge circuits and architectures
+40,0.6526042819023132,0.5544309020042419,0.831439733505249,6,Henkel,Joerg,For contributions to hardware/software co-design of power and thermal efficient embedded computing
+41,0.5493797063827515,0.604296088218689,0.17669841647148132,5,Khuller,Samir,For contributions to algorithm design with real-world implications and for mentoring and community-building
+42,0.1425943672657013,0.38066571950912476,0.25898900628089905,2,Soatto,Stefano,For contributions to the foundations and applications of visual geometry and visual representations learning
+43,0.5574966669082642,0.6113350987434387,0.8080735206604004,6,Marculescu,Radu,"For contributions to low-power and communication-based design of embedded systems
+"
+44,0.5402781367301941,0.7578704953193665,0.23312363028526306,5,Pass,Rafael,"For contributions to the foundations of cryptography
+"
+45,0.42083048820495605,0.5331546068191528,0.7685237526893616,4,Chandra,Ranveer,"For contributions to software-defined wireless networking and applications to agriculture and rural broadband
+"
+46,0.15064576268196106,0.5278251767158508,0.37184402346611023,2,Vidal,Rene,For contributions to subspace clustering and motion segmentation in computer vision
+47,0.7697228193283081,0.5528524518013,0.07105275988578796,5,Irani,Sandy,For contributions to the theory of online algorithms and quantum complexity theory
+48,0.24653859436511993,0.7716957330703735,0.08430519700050354,8,Elbaum,Sebastian,"For contributions to the analysis and testing of evolving systems and robotic systems
+"
+49,0.38497892022132874,0.6400066614151001,0.9003821015357971,4,Helal,Sumi,"For contributions to mobile and pervasive computing, and their applications in graceful aging and accessibility"
+50,0.6489419341087341,0.4196818470954895,0.7905408143997192,6,Sherwood,Tim,For contributions to computer system security and performance analysis
+51,0.61224764585495,0.7516706585884094,0.578071117401123,0,Hoefler,Torsten,"For foundational contributions to High Performance Computing and the application of HPC techniques to machine learning
+"
+52,0.2368900626897812,0.7413883209228516,0.5138877034187317,2,Zhu,Wenwu,"For contributions to multimedia networking and network representation
+"
+53,0.7298285961151123,0.4157416820526123,0.40233343839645386,1,Lin,Jimmy,"For contributions to question answering, information retrieval, and natural language processing
+"
+54,0.12285232543945312,0.5772982835769653,0.36500823497772217,2,Yu,Yizhou,For contributions to computer graphics and computer vision
+55,0.4833733141422272,0.6283270716667175,0.7640637755393982,4,Fang,Yuguang,For contributions to wireless networks and mobile computing
+56,0.9407273530960083,0.37764570116996765,0.5099399089813232,3,Su,Zhendong,For contributions to software testing and analysis
+57,0.28715768456459045,0.6866574883460999,0.8691076040267944,4,Dey,Anind,For contributions to ubiquitous computing and large-scale behavioral studies
+58,0.5570336580276489,0.4459894895553589,0.16607952117919922,5,Gupta,Anupam,"For contributions to approximation algorithms, online algorithms, stochastic algorithms and metric embeddings"
+59,0.7329325675964355,0.1871841847896576,0.2897642254829407,1,Sistla,Aravinda P,"For contributions to verifying concurrent programs, probabilistic systems, security and database systems"
+60,0.1738174557685852,0.7355770468711853,0.8909181952476501,4,Friedman,Batya,For contributions to human values in the technical design process
+61,0.2767013907432556,0.5889239311218262,0.07707244157791138,8,Nebel,Bernhard,"For contributions to knowledge representation and reasoning, automatic planning, and their applications in robotics
+"
+62,0.1537925899028778,0.5137428641319275,0.4886970818042755,2,Schiele,Bernt,"For contributions to large-scale object recognition, human detection, and pose estimation"
+63,0.8397185802459717,0.3995775878429413,0.41529959440231323,3,Nikolaj,Bjorner,For contributions to SMT solvers and network verification
+64,0.42972007393836975,0.6721639633178711,0.9505003094673157,4,Ganesan,Deepak,"For contributions to ultra-low power wireless sensing systems
+"
+65,0.20739850401878357,0.43342024087905884,0.4834625720977783,2,Li,Feifei,For contributions to query processing and optimization and to cloud database systems
+66,0.32526278495788574,0.3443145155906677,0.42948439717292786,9,White,Ryen W,"For contributions to information retrieval, human-computer interaction, and computational health"
+67,0.6081099510192871,0.42856311798095703,0.7713771462440491,6,Tehranipoor,Mark,For contributions to microelectronics security and trust
+68,0.060621172189712524,0.4872824251651764,0.1566113531589508,2,Sheffer,Alla,"For contributions to geometry processing, mesh parameterization, and perception-driven shape analysis and modeling"
+69,0.4820898473262787,0.7620362639427185,0.38808491826057434,0,Waters,Brent,For contributions to cryptography
+70,0.6627074480056763,0.6575304865837097,0.260078102350235,5,Miller,Dale A,For contributions to proof theory and computational logic
+71,0.3883915841579437,0.6377959251403809,0.9004876613616943,4,Choudhury,Tanzeem,For contributions to mobile systems for behavioral sensing and health interventions
+72,0.4787912666797638,0.2884617745876312,0.2437795102596283,1,Liu,Tie-Yan,"For contributions to machine learning algorithms and their applications
+"
+73,0.4405314326286316,0.22019556164741516,0.2513803541660309,9,Chang,Edward Y,For contributions to scalable machine learning and healthcare
+74,0.45579811930656433,0.32023197412490845,0.19328391551971436,9,Hazan,Elad,For contributions to efficient algorithms for convex and nonconvex optimization
+75,0.6447017788887024,0.5717463493347168,0.13099676370620728,5,Mossel,Elchanan,For contributions to theoretical computer science and inference
+76,0.36020421981811523,0.29790499806404114,0.4265998899936676,9,Gabrilovich,Evgeniy,"For contributions to the acquisition, representation, and dissemination of web-knowledge with applications to the medical domain"
+77,0.45410171151161194,0.2264116108417511,0.45772767066955566,9,Das,Gautam,For contributions to database search and graph algorithms
+78,0.6110124588012695,0.929391086101532,0.7073631882667542,0,Ricart,Glenn,"For leadership in creating advanced research infrastructure including the first Internet interconnection point
+"
+79,0.6221306920051575,0.42320361733436584,0.9996074438095093,6,Li,Hai,For contributions to neuromorphic computing and deep-learning acceleration
+80,0.7004193067550659,0.3117964267730713,0.6928779482841492,6,Franke,Hubertus,"For contributions to the communication, concurrency and resource control in parallel systems"
+81,0.18034082651138306,0.6774802803993225,0.7916210889816284,4,Wobbrock,Jacob Otto,"For contributions to human-computer interaction and accessible computing
+"
+82,0.8345028162002563,0.6036504507064819,0.5162643790245056,3,Ouaknine,Joel,For contributions to algorithmic analysis of dynamical systems
+83,0.5207321047782898,0.7429065704345703,0.3517778813838959,0,Katz,Jonathan,For contributions to cryptographic protocol design and cryptography education
+84,0.6952148079872131,0.43755024671554565,0.3774935305118561,1,Gal-Ezer,Judith,For contributions to research and implementation in computer science education
+85,0.4664458632469177,0.7927709817886353,0.3502386212348938,0,Adleman,Leonard M.,"For contributions to making public-key cryptography useful in practice
+"
+86,0.6622358560562134,0.43132027983665466,0.8167197108268738,6,Eeckhout,Lieven,For contributions in computer architecture performance analysis and modeling
+87,0.5023868680000305,0.6044360399246216,0.8295044302940369,6,Zhong,Lin,For contributions to mobile and network systems
+88,0.4227241277694702,0.7205491662025452,0.5120729804039001,0,Camp,Linda Jean,For contributions to computer security and e-crime measures
+89,0.6296969056129456,0.5390633344650269,0.14128011465072632,5,Trevisan,Luca,For contributions to complexity theory and combinatorial optimization
+90,0.5879379510879517,0.578784704208374,0.18228861689567566,5,Braverman,Mark,"For contributions to computational complexity, information theory, and algorithmic mechanism design"
+91,0.5613951683044434,0.0911916196346283,0.7477223873138428,7,Farach-Colton,Martin,For contributions to data structures for biocomputing and big data
+92,0.23574119806289673,0.5590359568595886,0.12856388092041016,8,Mason,Matthew T,For contributions to robotic manipulation and manipulation path planning
+93,0.3579486608505249,0.7433266043663025,0.6272218227386475,4,Balakrishnan,Meenakshi,"For contributions to system-level design, embedded systems and assistive technologies for the visually impaired"
+94,0.15225961804389954,0.5352594256401062,0.520736813545227,2,Yang,Ming-Hsuan,"For contributions to visual tracking, face processing, and low-level vision"
+95,0.4756673276424408,0.17709991335868835,0.42828673124313354,9,Zaki,Mohammed,For contributions to data mining algorithms and foundations
+96,0.17445135116577148,0.6408812999725342,0.7325271368026733,4,Shah,Mubarak Ali,For contributions to human action recognition in video and leadership for undergraduate research experience
+97,0.35506778955459595,0.60295569896698,0.0,8,Singh,Munindar P.,For contributions to artificial intelligence and multiagent systems and their applications in service-oriented computing and sociotechnical systems
+98,0.41906610131263733,0.6440309286117554,0.5150134563446045,0,Li,Ninghui,"For contributions to data privacy, access control, and trust management"
+99,0.8754177093505859,0.34433650970458984,0.5078235268592834,3,Inverardi,Paola,For contributions to software architecture
+100,0.391084760427475,0.3437539339065552,0.5876550078392029,9,Zhao,Ben Y.,"For contributions to peer-to-peer systems and online social networks
+"
+101,0.03749459981918335,0.4796038568019867,0.1717815101146698,2,Cohen-Or,Daniel,"For contributions to computer graphics, geometry processing and visual computing"
+102,0.6352677345275879,0.1727427840232849,0.5157204866409302,1,Bader,David A,"For contributions to high-performance computing systems, graph analytics, and technical leadership in parallel computing"
+103,0.8168197870254517,0.5706663727760315,0.870378851890564,6,Pan,David Z.,"For contributions to electronic design automation, including design for manufacturing and physical design"
+104,0.39376458525657654,0.26969560980796814,0.5365804433822632,9,Tang,Jie,For contributions to information and social network mining
+105,0.40475547313690186,0.6331592798233032,0.47245562076568604,0,Samarati,Pierangela,For contributions to data security and privacy
+106,0.5682070851325989,0.7646175622940063,0.2085786759853363,5,Ostrovsky,Rafail,For contributions to the foundations of cryptography
+107,0.02768486738204956,0.47997066378593445,0.16304060816764832,2,Wang,Wenping,For contributions to geometric modeling and computer graphics
+108,0.50938481092453,0.712544858455658,0.18783512711524963,5,Fiat,Amos,"For contributions to cryptography, online algorithms, and algorithmic game theory"
+109,0.6551100015640259,0.4137003719806671,0.7701230049133301,6,Kaeli,David R,For contributions to computer architecture and compilers
+110,0.8848564624786377,0.394137442111969,0.5234394073486328,3,Jhala,Ranjit,For contributions to software verification
+111,0.6553714871406555,0.44219306111335754,0.6117932796478271,6,Ross,Robert B,For contributions to high-performance computing in storage and parallel I/O
+112,0.4298499524593353,0.6094761490821838,0.10455146431922913,8,Kleinberg,Robert,For contributions to online learning and decision problems
+113,0.4271676540374756,0.6236310005187988,0.953580379486084,4,Picard,Rosalind Wright,For contributions to physiological signal sensing for individual health and wellbeing
+114,0.6890669465065002,0.14199021458625793,0.3175278902053833,1,Smolka,Scott,"For contributions in process algebra, model checking, and runtime verification"
+115,0.8972010016441345,0.38283300399780273,0.5333248376846313,3,Qadeer,Shaz,"For contributions to software verification, software testing, and programming languages
+"
+116,0.3044446110725403,0.6197319030761719,0.038555294275283813,8,Zilberstein,Shlomo,"For contributions to automated planning, resource-bounded reasoning, and multi-agent systems"
+117,0.04646691679954529,0.5139711499214172,0.3537236452102661,2,Marschner,Steve,For contributions to modeling the appearance of physical materials
+118,0.4946293532848358,0.2557554841041565,0.21538853645324707,1,Sarawagi,Sunita,"For contributions to statistical machine learning for information analysis, extraction, and integration"
+119,0.4438880383968353,0.6507307291030884,0.523404598236084,0,Jajodia,Sushil,"For contributions to cyber security, data protection, and privacy
+"
+120,0.0733959972858429,0.4163217544555664,0.21976995468139648,2,Rusinkiewicz,Szymon,"For contributions to acquisition, representation, analysis, rendering, and fabrication of 3D models"
+121,0.6451911330223083,0.5426275730133057,0.8275490999221802,6,Rosing,Tajana,"For contributions to power, thermal, and reliability management"
+122,0.05925333499908447,0.6135631799697876,0.24140214920043945,2,Xie,Tao,For contributions to software testing and analytics
+123,0.5479510426521301,0.137216717004776,0.44644954800605774,1,Lengauer,Thomas,For contributions to bioinformatics and medical informatics
+124,0.9824550151824951,0.3368684649467468,0.5514335036277771,3,Zimmermann,Thomas,For contributions to mining software repositories and defect prediction
+125,0.635754406452179,0.5744891166687012,0.8572216033935547,6,Hu,Xiaobo Sharon,For contributions to the design of power-constrained and real-time embedded systems
+126,0.46314966678619385,0.05939313769340515,0.6682705283164978,7,Ives,Zachary,"For contributions to data integration, sharing, and management for scientific applications"
+127,0.4578871428966522,0.5670866370201111,0.7036054730415344,4,Haas,Zygmunt J.,For contributions to communication and security protocols for ad hoc and sensor networks
+128,0.5281223058700562,0.6924777626991272,0.42452189326286316,0,Smith,Adam,For contributions to data privacy and cryptography
+129,0.4406982958316803,0.7631169557571411,0.3813193142414093,0,Shamir,Adi,For contributions to the field of cryptography
+130,0.766974925994873,0.5260291695594788,0.13092297315597534,5,Edelman,Alan,For contributions to algorithms and languages for numerical and scientific computing
+131,0.7516977787017822,0.8232442736625671,0.6707872152328491,6,Arpaci-Dusseau,Andrea,For contributions to storage and computer systems
+132,0.92694091796875,0.43656909465789795,0.5532394647598267,3,Gordon,Andrew D.,"For contributions to programming languages: their principles, logic, usability, and trustworthiness"
+133,0.38264569640159607,0.5533123016357422,0.4530273377895355,9,Tomkins,Andrew,For contributions to the understanding of the web and web-based social networks
+134,0.6205992698669434,0.021786034107208252,0.4179885983467102,1,Gonzalez,Antonio,For contributions to the design of energy-efficient and resilient computer architectures
+135,0.6207910776138306,0.8681168556213379,0.5612767934799194,0,Krishnamurthy,Arvind,For contributions to networks and distributed computer systems
+136,0.3256129324436188,0.3392077684402466,0.7360752820968628,4,Dorr,Bonnie J,For human-centered and linguistically inspired approaches to natural language processing
+137,0.4198852777481079,0.7466822862625122,0.5174534916877747,0,Levine,Brian,"For contributions to network forensics, security, and privacy, and for thwarting crimes against children
+"
+138,0.8722366094589233,0.4195123016834259,0.493832528591156,3,Hoare,C. Antony R.,"For contributions to the theory of programming, and its application to the practice of engineering of software
+"
+139,0.4263158440589905,0.7067316770553589,0.9544275999069214,4,Narayanaswami,Chandra,"For design and development of the Linux Watch and SoulPad, which influenced wearable and mobile systems"
+140,0.8522359728813171,0.4093225598335266,0.6351809501647949,3,Flanagan,Cormac,For contributions to static and dynamic program debugging and verification methods
+141,0.6630657911300659,0.4599051773548126,0.8757673501968384,6,Brooks,David,For contributions to software and hardware design for power-efficient computer architectures
+142,0.5683808922767639,0.5083760619163513,0.6167990565299988,6,Maltz,David,"For contributions to networking infrastructure, including data center networking, network operating systems, and cloud networking"
+143,0.530829668045044,0.6634957790374756,0.786709189414978,6,Lu,Chenyang,"For contributions to adaptive real-time systems, real-time virtualization, and wireless cyber-physical systems"
+144,0.45120543241500854,0.31700122356414795,0.43287578225135803,9,Hoos,Holger H.,For contributions to automated algorithm selection and configuration for optimization and machine learning
+145,0.5433860421180725,0.10383987426757812,0.4418852627277374,1,Wu,Cathy H,"For contributions to bioinformatics, computational biology, knowledge mining and semantic data integration"
+146,0.11390474438667297,0.3656127154827118,0.2676301598548889,2,Fox,Dieter,"For contributions to probabilistic state estimation, RGB-D perception, and learning for robotics and computer vision
+"
+147,0.6713078618049622,0.465995192527771,0.918163537979126,6,Parhi,Keshab K.,For contributions to architectures and design tools for signal processing and networking accelerators
+148,0.9775255918502808,0.2763811945915222,0.491499662399292,3,Williams,Laurie Ann,"For contributions to empirical research on agile software development, software security, and software engineering education"
+149,0.7364557981491089,0.5188470482826233,0.8581398725509644,6,John,Lizy Kurian,"For contributions to the design, modeling and benchmarking of computer architectures"
+150,0.24823175370693207,0.5980165004730225,0.8418668508529663,4,Morris,Meredith Ringel,"For contributions to human-computer interaction, information retrieval, computer-supported cooperative work, and accessibility
+"
+151,0.0983104407787323,0.5392734408378601,0.6440712213516235,2,Zyda,Michael J,"For contributions to game design, game and virtual reality networking, and body tracking"
+152,0.4821808934211731,0.9328655004501343,0.5580750703811646,0,Duffield,Nicholas,For contributions to network measurement and analysis
+153,0.30670422315597534,0.29415884613990784,0.6243370771408081,9,Menczer,Filippo,For research on the vulnerability of social media networks to disinformation and manipulation
+154,0.8925210237503052,0.538812518119812,0.4309414029121399,3,Plotkin,Gordon,"For contributions to the science of programming languages, particularly their operational and denotational semantics"
+155,0.6716052293777466,0.22764670848846436,0.5523465275764465,1,Park,Haesun,"For contributions to numerical algorithms, data analytics, and leadership in computational science and engineering"
+156,0.19945794343948364,0.590359628200531,0.5318259000778198,2,Shen,Heng Tao,"For contributions to large-scale multimedia content understanding, indexing and retrieval"
+157,0.29780274629592896,0.34200847148895264,0.44281572103500366,9,Allan,James,"For contributions to information retrieval, including topic detection and tracking"
+158,0.18636584281921387,0.7196323871612549,0.8592487573623657,4,Forlizzi,Jodi,For contributions to design research in human-computer interaction
+159,0.308178186416626,0.6411328911781311,0.9287304282188416,4,Canny,John,"For contributions in robotics, machine perception, human-computer interaction, and ubiquitous computing"
+160,0.7311872839927673,0.1846725046634674,0.2936663031578064,1,Katoen,Joost-Pieter,For contributions to model checking of software and probabilistic systems
+161,0.8434210419654846,0.5736888647079468,0.49248671531677246,3,Meseguer,Jose,For the development of logical methods for design and verification of computational systems
+162,0.7616424560546875,0.7784476280212402,0.6620253920555115,6,Thompson,Kenneth Lane,For contributions to the development of operating systems theory and for the implementation of the UNIX operating system
+163,0.415558397769928,0.6221701502799988,0.08379349112510681,8,Leyton-Brown,Kevin,"For contributions to artificial intelligence, including computational game theory, multi-agent systems, machine learning, and optimization"
+164,0.4818049371242523,0.6639750003814697,0.6309326887130737,0,Ren,Kui,For contributions to wireless system security and cloud data security
+165,0.03474283218383789,0.49975061416625977,0.3331295847892761,2,Zhou,Kun,For contributions to computer graphics
+166,0.5194279551506042,0.512522280216217,0.637967586517334,6,Tassiulas,Leandros,For contributions to network control and optimization with applications in communication networks
+167,0.9261951446533203,0.38616448640823364,0.4764879643917084,3,Briand,Lionel,For contributions to automated software testing
+168,0.2357076108455658,0.5293377637863159,0.1513042449951172,8,Mataric,Maja,For contributions to socially assistive robotics and human-robot systems
+169,0.6449317932128906,0.23206192255020142,0.577960729598999,1,Parashar,Manish,For contributions to high-performance parallel and distributed computing and computational science
+170,0.6156994104385376,0.7412353754043579,0.2169550657272339,5,Blum,Manuel,For contributions to the foundations of computational complexity theory and its application to cryptography and program checking
+171,0.46805936098098755,0.87403804063797,0.2839243412017822,0,Hellman,Martin,For the invention of asymmetric public-key cryptography and the promulgation of a practical cryptographic key-exchange method
+172,0.15431258082389832,0.6836850047111511,0.8712252974510193,4,Rosson,Mary Beth,"For contributions to human-computer interaction, including scenario-based design"
+173,0.029012709856033325,0.4232301115989685,0.2007395327091217,2,Desbrun,Mathieu,For contributions to geometry processing and discrete differential geometry
+174,0.12506350874900818,0.5373826026916504,0.5920360684394836,2,Turk,Matthew A,"For contributions to face recognition, computer vision, and multimodal interaction"
+175,0.5122506618499756,0.7410947680473328,0.19399619102478027,5,Rabin,Michael O.,"For fundamental, pioneering contributions to the theory of computation, probabilistic algorithms, and cryptography"
+176,0.5669291019439697,0.8259234428405762,0.16090691089630127,5,Naor,Moni,For contributions to the foundations of cryptography and theoretical computer science
+177,0.5478779673576355,0.4642011821269989,0.1944299042224884,5,Charikar,Moses,"For design of efficient algorithmic techniques for big data, hashing, approximation algorithms, and metric embeddings"
+178,0.9949290752410889,0.273292601108551,0.5373296737670898,3,Nagappan,Nachiappan,For contributions to empirical software engineering and data-driven software development
+179,0.739291787147522,0.5158247351646423,0.8584526777267456,6,Kim,Nam Sung,For contribution to design and modeling of power-efficient computer architectures
+180,0.7656633853912354,0.5036603808403015,0.23199909925460815,5,Higham,Nicholas,"For contributions to numerical linear algebra, numerical stability analysis, and communication of mathematics"
+181,0.052531272172927856,0.4368308186531067,0.19908010959625244,2,Sorkine-Hornung,Olga,"For contributions to digital geometry processing, computer animation, computer graphics and visual computing"
+182,0.8893631100654602,0.5325778126716614,0.4354017376899719,3,Cousot,Patrick,For contributions to programming languages through the invention and development of abstract interpretation
+183,0.3705936670303345,0.28641563653945923,0.5622594356536865,9,Resnick,Paul,"For contributions to recommender systems, economics and computation, and online communities"
+184,0.26691901683807373,0.6322505474090576,0.08919748663902283,8,Stone,Peter,"For contributions to automated planning, learning, and multiagent systems with applications in robotics and ecommerce"
+185,0.7698966860771179,0.5008688569068909,0.06361383199691772,5,Panangaden,Prakash,For making continuous state systems amenable to logical and computational treatment
+186,0.4036099910736084,0.6164487600326538,0.5369365215301514,0,Cormode,Graham R.,For contributions to data summarization and privacy enabling data management and analysis
+187,0.376140296459198,0.09948396682739258,0.5469107031822205,9,Sheth,Amit,For contributions to data semantics and knowledge-enhanced computing
+188,0.7240194082260132,0.5054521560668945,0.979981541633606,6,Chandrakasan,Anantha,For energy-efficient design methodologies and circuits that enabled ultralow-power wireless sensors and computing devices
+189,0.455443799495697,0.039239585399627686,0.6541473269462585,7,Ilyas,Ihab F.,For contributions to data cleaning and data integration
+190,0.4210701584815979,0.5646300911903381,0.7480719089508057,4,Banerjee,Suman,"For contributions to design, implementation, and tools of wireless systems"
+191,0.811465859413147,0.5646810531616211,0.8605831861495972,6,Chang,Yao-Wen,For contributions to algorithmic electronic design automation
+192,0.5141384601593018,0.12988850474357605,0.6482225656509399,7,Abadi,Daniel J,"For contributions to distributed databases, column-store databases, deterministic databases, graph databases, and stream databases"
+193,0.44108331203460693,0.6552556157112122,0.7031874656677246,4,Kotz,David,"For contributions to the security, privacy, and usability of mobile systems"
+194,0.5621914267539978,0.08050504326820374,0.4530676007270813,1,Troyanskaya,Olga,"For contributions to computational biology, data integration and deep learning applications for genome interpretation"
+195,0.22071188688278198,0.7630164623260498,0.1329437792301178,8,Nagpal,Radhika,"For contributions to collective intelligence,  including self-organizing systems and swarm robotics"
+196,0.4910578429698944,0.7436679005622864,0.39242881536483765,0,Canetti,Ran,For  contributions to cryptography and computer security
+197,0.5344072580337524,0.6622837781906128,0.42017513513565063,0,Kumar,Ravi,"For contributions to web science modeling, analytics, and algorithms"
+198,0.7519854307174683,0.8150849938392639,0.6685335636138916,6,Arpaci-Dusseau,Remzi,For contributions to storage and computer systems
+199,0.5979148149490356,0.16904503107070923,0.4867294430732727,1,Stevens,Rick,"For contributions in high-performance computing systems, collaborative environments, and tools for large-scale science initiatives"
+200,0.7557664513587952,0.8450515866279602,0.6816567182540894,6,Noh,Sam H.,"For contributions to storage system software, including flash and byte-addressable non-volatile memory"
+201,0.4615394175052643,0.12163904309272766,0.7105854749679565,7,Madden,Samuel,For contributions to data management and sensor computing systems
+202,0.722295343875885,0.871874213218689,0.6434067487716675,0,Ghemawat,Sanjay,For contributions to distributed systems design
+203,0.8466389179229736,0.6593814492225647,0.564731240272522,3,Seshia,Sanjit Arunkumar,"For contributions to formal verification, inductive synthesis, and cyber-physical systems"
+204,0.7019734382629395,0.34949007630348206,0.7057172060012817,6,Mahlke,Scott,"For contributions in compiler code generation for instruction level parallelism, and customized microprocessor architectures"
+205,0.21187016367912292,0.6744376420974731,0.510173499584198,2,Panchanathan,Sethuraman,"For contributions to multimedia technologies and leadership in the scientific community
+"
+206,0.14758411049842834,0.6013820767402649,0.5013882517814636,2,Yan,Shuicheng,For contributions to visual content understanding techniques and applications
+207,0.6617952585220337,0.16863515973091125,0.529327392578125,1,Aluru,Srinivas,For contributions to parallel methods in computational biology and leadership in data science
+208,0.6386594772338867,0.8575221300125122,0.7679630517959595,0,Gribble,Steven,"For contributions to virtualization technology across clusters, servers, and networks"
+209,0.5564602017402649,0.9509062767028809,0.5417695045471191,0,Low,Steven H.,For theoretical foundations and real-world deployment of Internet congestion control and smart grid optimization
+210,0.5998150110244751,0.051809996366500854,0.4023233652114868,1,Salzberg,Steven,"For contributions to computational biology, including software for DNA sequence analysis, alignment, and genome assembly"
+211,0.6835851669311523,0.43016767501831055,0.38243064284324646,1,Hambrusch,Susanne E,For research and leadership contributions to computer science education
+212,0.2920035123825073,0.6240492463111877,0.03916338086128235,8,Koenig,Sven,"For contributions to artificial intelligence, including heuristic search and multi-agent coordination"
+213,0.3264608085155487,0.08419686555862427,0.45889320969581604,9,Eiter,Thomas,"For contributions to knowledge representation and reasoning, logic programming, and declarative problem solving"
+214,0.45903319120407104,0.6509777903556824,0.07268619537353516,8,Walsh,Toby,For contributions to artificial intelligence
+215,0.4954823851585388,0.24893584847450256,0.6027275323867798,7,Markl,Volker,"For contributions to query optimization, scalable data processing, and data programmability"
+216,0.8080187439918518,0.6631689071655273,0.5908954739570618,3,Yi,Wang,For contributions to the automated analysis and verification of real-time systems
+217,0.4896186888217926,0.27561548352241516,0.5234796404838562,9,Wang,Wei,For contributions to the foundation and practice of data mining
+218,0.46805936098098755,0.87403804063797,0.2839243412017822,0,Diffie,Whitfield,For the invention of asymmetric public-key cryptography and the promulgation of a practical cryptographic key-exchange method
+219,0.083375483751297,0.4986402690410614,0.40383946895599365,2,LI,Xuelong,For contributions to computing on and learning from higher-order data
+220,0.6218603849411011,0.42294779419898987,1.0,6,Chen,Yiran,For contributions to nonvolatile memory technologies
+221,0.5631206035614014,0.529656171798706,0.19819021224975586,5,Tao,Yufei,For contributions to algorithms for large scale data processing
+222,0.5434568524360657,0.029822707176208496,0.6578456163406372,7,Van Der Aalst,Wil,"For contributions to process mining, process management, and data science"
+223,0.6646186709403992,0.4317854344844818,0.5939285159111023,6,Calder,Bradley G,"For contributions to cloud storage; processor simulation, replay, and feedback-directed optimization of systems and applications"
+224,0.4811052978038788,0.05797186493873596,0.7408286333084106,7,Zaniolo,Carlo A,For contributions to the theory and practice of data and knowledge-base systems
+225,0.5024047493934631,0.8033078908920288,0.4003322124481201,0,Cachin,Christian,For contributions to secure distributed computing and cryptographic protocols
+226,0.3732738792896271,0.30654415488243103,0.7450486421585083,7,Cardie,Claire,"For contributions to natural language processing, including coreference resolution,  information and opinion extraction"
+227,0.4693310558795929,0.3742549419403076,0.4108228385448456,9,Whitley,Darrell,For technical and professional leadership in the field of genetic and evolutionary computation
+228,0.42872750759124756,0.6629396080970764,0.5150011777877808,0,Song,Dawn,For contributions to security and privacy
+229,0.31764480471611023,0.0,0.481065034866333,9,Calvanese,Diego,For contributions to description logics and their applications in data management and software engineering
+230,0.43879976868629456,0.3249940872192383,0.2642080783843994,9,Stolfo,Salvatore J,For contributions to machine-learning-based cybersecurity and parallel hardware for database inference systems
+231,0.5108325481414795,0.6941890120506287,0.6006861329078674,0,Frincke,Deborah,"For contributions in education, the practice of research, and the leadership of cybersecurity"
+232,0.5196207165718079,0.1666138768196106,0.6072712540626526,7,Balazinska,Magdalena,For contributions to scalable distributed data systems
+233,0.7685375213623047,0.5013396739959717,0.23333168029785156,5,Boisvert,Ronald F,For contributions to mathematical software and service to the profession
+234,0.7793283462524414,0.5569218397140503,0.07851314544677734,5,Aaronson,Scott J,For contributions to quantum computing and computational complexity
+235,0.48205745220184326,0.6420486569404602,0.627063512802124,0,Ferrari,Elena,For contributions to security and privacy of data and social network systems
+236,0.1807309091091156,0.6609264016151428,0.7795590162277222,4,Churchill,Elizabeth Frances,For contributions to human-computer interaction and service to the ACM.
+237,0.9056215286254883,0.4497125744819641,0.6810543537139893,3,Berger,Emery David,For contributions in memory management and programming language implementation 
+238,0.506708025932312,0.7575201988220215,0.5595402121543884,0,Vigna,Giovanni,For contributions to improving the security of the Internet and combating cybercrime
+239,0.03361806273460388,0.5746790170669556,0.39999696612358093,2,Pfister,Hanspeter,"For contributions to volume rendering, visualization, computer graphics, and computer vision applications"
+240,0.38833755254745483,0.7114034295082092,0.7317044734954834,4,Nieh,Jason,"For contributions to operating systems, virtualization, and computer science education"
+241,0.35398662090301514,0.6149280071258545,0.03151687979698181,8,Rosenschein,Jeffrey S,"For contributions to multi-agent systems, in particular, the use of game theory in multi-agent systems"
+242,0.6567248106002808,0.9850645065307617,0.5314600467681885,0,Chandy,Kanianthra Mani,"For contributions to queuing networks, performance analysis, distributed and parallel programming, and distributed simulation"
+243,0.05624851584434509,0.5623999238014221,0.3974573612213135,2,Bala,Kavita,For contributions to rendering and scene understanding
+244,0.6793320178985596,0.8563905954360962,0.6108866333961487,0,Zhou,Lidong,For contributions to trustworthy distributed computing and to systems research and education in China
+245,0.3727308511734009,0.12898951768875122,0.48198968172073364,9,Getoor,Lise,"For contributions to machine learning, reasoning under uncertainty, and responsible data science"
+246,0.3653692305088043,0.509554386138916,0.42306625843048096,9,Najork,Marc,For contributions to web search and web science
+247,0.23543816804885864,0.7470442056655884,0.09855383634567261,8,Gini,Maria L,For contributions to robotics and multi-agent systems and a lifelong commitment to diversity in computing
+248,0.8544751405715942,0.3138200640678406,0.5431873798370361,3,Dwyer,Matthew B,For contributions to the specification and analysis of software
+249,0.6485815048217773,0.8570282459259033,0.589347779750824,0,Freedman,Michael J.,For contributions to robust distributed systems for the modern cloud
+250,0.59703129529953,0.053738296031951904,0.3968644142150879,1,Pop,Mihai,"For contributions to computational biology, algorithms, and software for DNA sequence analysis and sequence assembly"
+251,0.1703205704689026,0.3600916266441345,0.26633918285369873,2,Singh,Mona,"For contributions to computational biology, spearheading algorithmic and machine learning approaches for characterizing proteins and their interactions"
+252,0.48759233951568604,0.6587317585945129,0.150963693857193,5,Tennenholtz,Moshe,For contributions to AI and algorithmic game theory
+253,0.315451979637146,0.30126750469207764,0.6466420888900757,9,Contractor,Noshir,"For contributions to advances in computational social science, network science and web science"
+254,0.6407332420349121,0.6493918895721436,0.22145414352416992,5,Beame,Paul,"For contributions in computational and proof complexity and their applications, and for outstanding service"
+255,0.7727437019348145,0.5387348532676697,0.0897778868675232,5,Shor,Peter W,"For contributions to quantum computing, information theory, and randomized algorithms"
+256,0.19523057341575623,0.41807669401168823,0.8620700836181641,4,Cohen,Philip R,"For contributions to the theory and practice of multi-agent systems, human-computer dialogue, and multimodal interaction"
+257,0.6302011013031006,0.9073354601860046,0.5583423972129822,0,Shenoy,Prashant J,For contributions to the modeling and design of distributed systems
+258,0.7171235680580139,0.5002261400222778,0.9634876251220703,6,Marculescu,Diana,For contributions to the design and optimization of energy-aware computing systems
+259,0.5276919603347778,0.008588612079620361,0.7089452743530273,7,Reuter,Andreas,For contributions to database concurrency control and for service to the community
+260,0.08029741048812866,0.6330339312553406,0.38907119631767273,2,Youssef,Moustafa A,For contributions to location tracking algorithms
+261,0.7043309807777405,0.5462180376052856,0.27597135305404663,5,Vishnoi,Nisheeth,"For contributions to theoretical computer science and its connections with mathematics, sciences, and social sciences"
+262,0.1783612072467804,0.510513961315155,0.5346269607543945,2,Tao,Dacheng,For contributions to representation learning and its applications
+263,0.7365899085998535,0.41508686542510986,0.7860671281814575,6,Xie,Yuan,For contributions to the design techniques and tools for the implementation and evaluation of computer architectures
+264,0.2931045889854431,0.3085193634033203,0.7192367315292358,9,Mihalcea,Rada,"For contributions to natural language processing, with innovations in data-driven and graph-based language processing"
+265,0.6902506351470947,0.8098142147064209,0.4358629286289215,0,Sitaraman,Ramesh Kumar,"For contributions to content delivery networks, distributed systems, and scalable Internet services"
+266,0.25188732147216797,0.7137298583984375,0.06707417964935303,8,Murphy,Robin R,For contributions in founding and advancing the field of computing for disasters and robotics
+267,0.698689877986908,0.34285324811935425,0.6956167817115784,6,Amarasinghe,Saman,"For contributions to high performance computing on modern hardware platforms, domain-specific languages, and compilation techniques
+"
+268,0.32422709465026855,0.04355013370513916,0.48746269941329956,9,McIlraith,Sheila,For contributions to knowledge representation and its applications to automated planning and semantic web services
+269,0.43022632598876953,0.7069100141525269,0.7462067008018494,4,Lu,Songwu,For helping create a more resilient and performant cellular network
+270,0.4697903096675873,0.6853513121604919,0.6382737755775452,0,Capkun,Srdjan,For contributions to systems and wireless network security
+271,0.37594372034072876,0.5917264819145203,0.7238155603408813,4,Seshan,Srinivasan,"For contributions to computer networking, mobile computing and wireless communications"
+272,0.28197240829467773,0.6408893465995789,0.009508013725280762,8,Kambhampati,Subbarao,For contributions to automated planning and human-aware AI systems and leadership within the field
+273,0.5330892205238342,0.33766013383865356,0.19328579306602478,1,Kolda,Tamara G,"For innovations in algorithms for tensor decompositions, contributions to data science, and community leadership"
+274,0.5305302143096924,0.6312923431396484,0.796790599822998,6,Abdelzaher,Tarek,"For interdisciplinary contributions that bridge cyber-physical systems, social sensing, real-time computing, and control"
+275,0.009539157152175903,0.49309393763542175,0.09181702136993408,2,Chan,Timothy,"For contributions to computational geometry, algorithms, and data structures"
+276,0.6103519797325134,0.9305511713027954,0.7055907845497131,0,Pinkston,Timothy,"For contributions to interconnection network routing algorithms and architectures, and leadership in expanding computing research"
+277,0.43613409996032715,0.6330419778823853,0.08444249629974365,8,Conitzer,Vincent,"For contributions to game theory, social choice theory, and mechanism design"
+278,0.1214655339717865,0.61358243227005,0.801193356513977,4,Mackay,Wendy Elizabeth,"For contributions to human-computer interaction, mixed reality and participatory design, and leadership in ACM SIGCHI"
+279,0.6330357789993286,0.002534031867980957,0.42760151624679565,1,Li,Xiangyang,"For contributions to the design, analysis and optimization of IoT and mobile systems
+"
+280,0.1376413106918335,0.5347750782966614,0.5579708218574524,2,Chen,Xilin,For contributions to face and sign language recognition and multimedia systems
+281,0.3839179575443268,0.6937286257743835,0.712807834148407,4,Wolman,Alec,For contributions to trusted mobile systems and services
+282,0.5852258801460266,0.8326843976974487,0.5872039198875427,0,Snoeren,Alex C.,"For innovative approaches to measuring, managing and directing network traffic"
+283,0.45765647292137146,0.8525604009628296,0.6416728496551514,0,Bruckman,Amy S,For contributions to collaborative computing and foundational work in Internet research ethics.
+284,0.7971736788749695,0.4191991686820984,0.7244755625724792,6,Dehon,Andre M,"For contributions to architecture exploration and design automation of spatially programmable computing fabrics, especially FPGAs"
+285,0.7045011520385742,0.547349750995636,0.27474918961524963,5,Wigderson,Avi,For contributions to theoretical computer science and mathematics
+286,0.22779932618141174,0.40909188985824585,0.47170692682266235,2,Manjunath,Bangalore S,"For contributions to image search and retrieval with applications in digital libraries, marine sciences, and biology"
+287,0.6819985508918762,0.7928311824798584,0.42329907417297363,0,Maggs,Bruce M,For contributions to the development of content distribution networks and the theory of computer networks
+288,0.21010950207710266,0.6065109968185425,0.10777643322944641,8,Halperin,Dan,For contributions to robust geometric computing and applications to robotics and automation
+289,0.4084339737892151,0.6508873701095581,0.05581247806549072,8,Parkes,David,"For contributions to computational markets, including novel mechanism design and incentive engineering methods"
+290,0.7292161583900452,0.855548620223999,0.6511449813842773,0,Keeton,Kimberly,"For contributions improving the dependability, manageability, and usability of storage and novel memory systems"
+291,0.46399325132369995,0.5668681859970093,0.7534140348434448,4,Gerla,Mario,For contributions to design and analysis of mobile wireless protocols for vehicular safety and traffic applications
+292,0.5077581405639648,0.8997000455856323,0.5796422958374023,0,Roughan,Matthew,"For contributions to Internet measurement and analysis, with applications to network engineering"
+293,0.12309965491294861,0.5783818960189819,0.498412162065506,2,Hertzmann,Aaron,"For contributions to computer graphics, non-photorealistic rendering, computer animation, and machine learning"
+294,0.4658627510070801,0.6303768754005432,0.5371183156967163,0,Thuraisingham,Bhavani,"For contributions to methods, tools, and systems for security and privacy of data and applications"
+295,0.36696717143058777,0.5221354961395264,0.14037355780601501,8,Tesauro,Gerald,"For contributions to reinforcement learning, neural networks, and intelligent autonomous agents"
+296,0.6906086206436157,0.7344852089881897,0.3720592260360718,5,Leighton,Tom,"For his leadership in the establishment of content delivery networks, and his contributions to algorithm design"
+297,0.36484968662261963,0.5617767572402954,0.6988300085067749,4,Belding,Elizabeth,For contributions to communication in mobile networks and their deployment in developing regions
+298,0.35835975408554077,0.49507275223731995,0.3770354688167572,9,Voorhees,Ellen M,"For contributions in evaluation of information retrieval, question answering, and other language technologies"
+299,0.20203498005867004,0.44010481238365173,0.48657044768333435,2,Li,Fei-Fei,For contributions in building large knowledge bases for machine learning and visual understanding
+300,0.6374915838241577,0.282832533121109,0.5722723007202148,1,Mueller,Frank,"For contributions to the predictability of real-time systems, resilience in high-performance computing, and multi-threading techniques"
+301,0.7551155090332031,0.2035297155380249,0.29472702741622925,1,Agha,Gul,"For research in concurrent programming and formal methods, specifically the Actor Model"
+302,0.712497353553772,0.8227424621582031,0.4368581771850586,0,Parulkar,Gurudatta,For contributions to improving the Internet architecture and open source software
+303,0.4147511124610901,0.2778158187866211,0.5604546070098877,9,Liu,Huan,For contributions in feature selection for data mining and knowledge discovery and in social computing
+304,0.5302594304084778,0.7574313282966614,0.2985982298851013,5,Camenisch,Jan,For contributions to privacy-enhancing cryptographic protocols and leadership in their practical realization
+305,0.09826213121414185,0.5392398834228516,0.6439869999885559,2,Hodgins,Jessica K,"For contributions to character animation, human simulation, and humanoid robotics."
+306,0.21900954842567444,0.588649570941925,0.5493941903114319,2,Luo,Jiebo,For contributions to multimedia content analysis and social multimedia informatics
+307,0.5808156728744507,0.7328864336013794,0.175958514213562,5,H stad,Johan,"For contributions in circuit complexity, approximability and inapproximability, and foundations of pseudorandomness"
+308,0.2955971360206604,0.5983686447143555,0.8016877174377441,4,Gilbert,Juan E,For contributions to broadening participation in computing and to accessible voting technologies
+309,0.46206575632095337,0.949642539024353,0.5508365631103516,0,Borner,Katy,For contributions to methods and tools that enable users to render data into actionable insights
+310,0.7184521555900574,0.37045079469680786,0.7385193705558777,6,Asanovic,Krste,"For contributions to computer architecture, including the open RISC-V instruction set and Agile hardware development"
+311,0.40944719314575195,0.543695330619812,0.7053056955337524,4,Qiu,Lili,For contributions to the design and analysis of wireless network protocols and mobile systems
+312,0.31384027004241943,0.31461018323898315,0.7001005411148071,9,Lee,Lillian,"For contributions to natural language processing, sentiment analysis, and computational social science"
+313,0.3671145439147949,0.5217025279998779,0.1407397985458374,8,Littman,Michael,For contributions to the design and analysis of sequential decision making algorithms in artificial intelligence
+314,0.4975215494632721,0.6655452251434326,0.1622966229915619,5,Hajiaghayi,Mohammad T.,For contributions to the fields of algorithmic graph theory and algorithmic game theory
+315,0.4126301407814026,0.6899162530899048,0.6850020289421082,4,Asokan,N,"For contributions to systems security and privacy, especially of mobile systems"
+316,0.6091934442520142,0.768244743347168,0.5773959755897522,0,Barham,Paul,For contributions to the design of operating systems and scalable distributed information processing systems
+317,0.49093616008758545,0.28412097692489624,0.24718204140663147,1,Bartlett,Peter L,For contributions to the theory of machine learning
+318,0.8604251742362976,0.289203017950058,0.5576367974281311,3,Devanbu,Premkumar T,For contributions to using software data and meta-data to improve software tools and processes
+319,0.4559304416179657,0.24646437168121338,0.24762499332427979,9,Isbell,Charles Lee,For contributions to interactive machine learning; and for contributions to increasing access and diversity in computing
+320,0.7898114323616028,0.48364952206611633,0.24368581175804138,5,Hughes,John,For contributions to software testing and functional programming.
+321,0.6039148569107056,0.8284386992454529,0.18535608053207397,5,Sahai,Amit,For contributions to cryptography and to the development of indistinguishability obfuscation
+322,0.46805378794670105,0.7251101732254028,0.4615667164325714,0,Basin,David,For contributions to Information Security and Formal Methods
+323,0.4975605905056,0.23838311433792114,0.5691254734992981,7,Garofalakis,Minos,"For contributions to data processing and analytics, particularly data streaming, approximation, and uncertainty."
+324,0.33917972445487976,0.5845836400985718,0.7680825591087341,4,Heinzelman,Wendi Beth,For contributions to wireless communication systems and protocols and leadership in broadening participation in computing
+325,0.32757964730262756,0.09034433960914612,0.46436768770217896,9,Darwiche,Adnan,For contributions to the foundations and technology of automated reasoning
+326,0.8445818424224854,0.4266795814037323,0.584008514881134,3,Bodik,Rastislav,For contributions to program synthesis
+327,0.582783579826355,0.807638943195343,0.18014881014823914,5,Vadhan,Salil,"For advancing computational complexity and cryptography, and for promoting public support for theoretical computer science"
+328,0.3962920308113098,0.6383127570152283,0.44602352380752563,0,Dwarkadas,Sandhya,For contributions to shared memory and reconfigurability
+329,0.5597521066665649,0.4423202872276306,0.15879783034324646,5,Khanna,Sanjeev,"For contributions to approximation algorithms, hardness of approximation, and sublinear algorithms"
+330,0.216154545545578,0.7490191459655762,0.8104344606399536,4,Feiner,Steven,"For contributions to human-computer interaction, virtual and augmented reality, and 3D user interfaces"
+331,0.03889358043670654,0.5017398595809937,0.06956544518470764,2,Dey,Tamal K,For contributions to computational geometry and computational topology
+332,0.054665714502334595,0.4800141155719757,0.17288684844970703,2,Funkhouser,Thomas,For research contributions in computer graphics
+333,0.5000662207603455,0.618729829788208,0.6882902979850769,0,He,Tian ,"For contributions to wireless networks, sensing systems, and Internet of things (IoT)"
+334,0.3821636736392975,0.20116984844207764,0.5491187572479248,9,Finin,Tim,For contributions to theory and practice of knowledge sharing in distributed systems and the World-Wide Web
+335,0.6440460681915283,0.6524226069450378,0.22837790846824646,5,Pitassi,Toniann,For contributions to research and education in the fields of computational and proof complexity
+336,0.5470468997955322,0.9228757619857788,0.5724377632141113,0,Misra,Vishal,"For contributions to network traffic modeling, congestion control and Internet economics"
+337,0.8404515981674194,0.399664968252182,0.4172487258911133,3,Gupta,Aarti,For contributions to system analysis and verification techniques and their transfer to industrial practice
+338,0.48874539136886597,0.181167870759964,0.41700035333633423,1,Zhang,Aidong,For contributions to bioinformatics and data mining
+339,0.6191713809967041,0.660820722579956,0.05751201510429382,5,Vardy,Alexander,For contributions to the theory and practice of error-correcting codes and their study in complexity theory
+340,0.6573226451873779,0.5336505174636841,0.6729358434677124,6,Sivasubramaniam,Anand,For contributions to power management of datacenters and high-end computer systems
+341,0.6504144072532654,0.3585939407348633,0.8543844223022461,6,Moshovos,Andreas,For contributions to high-performance architecture including memory dependence prediction and snooping coherence
+342,0.6899646520614624,0.7254626750946045,0.36287063360214233,5,Prabhakar,Balaji,For developing algorithms and systems for large-scale data center networks and societal networks
+343,0.09253782033920288,0.4779224395751953,0.506536066532135,2,Schoelkopf,Bernhard,For contributions to the theory and practice of machine learning
+344,0.2572985291481018,0.7495481371879578,0.1325259804725647,8,Gomes,Carla,"For establishing the field of computational sustainability, and for foundational contributions to artificial intelligence"
+345,0.37987589836120605,0.2966572344303131,0.4477497935295105,9,Zhai,Chengxiang,For contributions to information retrieval and text data mining
+346,0.3376786410808563,0.49440625309944153,0.39597785472869873,9,Lynch,Clifford A,"For contributions to library automation, information retrieval, scholarly communication, and information policy"
+347,0.37678104639053345,0.12472018599510193,0.5334773659706116,9,Knoblock,Craig,"For contributions to artificial intelligence, semantic web, and semantic data integration"
+348,0.6469691395759583,0.5090934038162231,0.15566787123680115,5,Gusfield,Dan,For contributions to combinatorial optimization and to algorithmic computational biology
+349,0.1544816493988037,0.6012454032897949,0.34843385219573975,2,Comaniciu,Dorin,"For contributions to machine intelligence, diagnostic imaging, image-guided interventions, and computer vision"
+350,0.49202680587768555,0.8205212354660034,0.5582009553909302,0,Keromytis,Angelos Dennis,For contributions to the theory and practice of systems and network security
+351,0.5618356466293335,0.15219789743423462,0.4734592139720917,1,Kesselman,Carl,"For contributions to high-performance computing, distributed systems, and scientific data management"
+352,0.6486417055130005,0.8350518345832825,0.7903602123260498,6,Hand,Steven Michael,For contributions to virtual machines and cloud computing
+353,0.17435291409492493,0.5626451969146729,0.5222220420837402,2,Rui,Yong,"For contributions to image, video and multimedia analysis, understanding, and retrieval"
+354,0.5449481010437012,0.508762001991272,0.6220228672027588,6,Cohen,Edith,For contributions to the design of efficient algorithms for networking and big data
+355,0.3954043388366699,0.45865198969841003,0.7580131888389587,4,Li,Li Erran,"For contributions to the design and analysis of wireless networks, improving architectures, throughput, and analytics"
+356,0.6433084011077881,0.8478081822395325,0.7775468826293945,0,Bugnion,Edouard,For contributions to virtual machines
+357,0.3504822254180908,0.4972704350948334,0.39177146553993225,9,Fox,Edward Alan,For contributions in information retrieval and digital libraries
+358,0.42193275690078735,0.5928449034690857,0.7655608057975769,4,Knightly,Edward,"For contributions to multi-user wireless LANs, wireless networks for underserved regions, and cross-layer wireless networking"
+359,0.6837356686592102,0.45394542813301086,0.805047869682312,6,Loh,Gabriel H,For contributions to die-stacking technologies in computer architecture
+360,0.9101158380508423,0.3386049270629883,0.543064296245575,3,Murphy,Gail C,For contributions to recommenders for software engineering and to program comprehension
+361,0.5963166952133179,0.8310187458992004,0.5812468528747559,0,Voelker,Geoffrey,"For contributions to empirical measurement and analysis in systems, networking and security"
+362,0.16402798891067505,0.6156700849533081,0.3393551707267761,2,Hager,Gregory,For contributions to vision-based robotics and to computer-enhanced interventional medicine
+363,0.7893105745315552,0.698474109172821,0.6253725290298462,6,Lee,Insup,For theoretical and practical contributions to compositional real-time scheduling and runtime verification
+364,0.5568810701370239,0.9222525954246521,0.5649489760398865,0,Ramakrishnan,K. K.,"For contributions to congestion control, operating system support for networks and virtual private networks"
+365,0.6505138278007507,0.22949615120887756,0.587363064289093,1,Kale,Laxmikant,For development of new parallel programming techniques and their deployment in high performance computing applications
+366,0.5159651637077332,0.6208212375640869,0.7994728088378906,6,Srivastava,Mani B.,"For contributions to sensor networks, mobile personal sensing, and cyber-physical systems"
+367,0.9523581266403198,0.3289828300476074,0.4469529092311859,3,Burnett,Margaret,"For contributions to end-user software engineering, understanding gender biases in software, and broadening participation in computing"
+368,0.6729464530944824,0.669539213180542,0.2852686643600464,5,Grohe,Martin,"For contributions to logic in computer science, database theory, algorithms, and computational complexity"
+369,0.8054112195968628,0.5581800937652588,0.8511004447937012,6,Wong,Martin,For contributions to the algorithmic aspects of electronic design automation (EDA)
+370,0.10205256938934326,0.5196441411972046,0.3564099073410034,2,Kass,Michael,"For contributions to computer vision and computer graphics, particularly optimization and simulation"
+371,0.6222163438796997,0.6163754463195801,0.19086545705795288,5,Sipser,Michael,"For contributions to computational complexity, particularly randomized computation and circuit complexity"
+372,0.6690126061439514,0.9863975048065186,0.5556718707084656,0,Harchol-Balter,Mor,For contributions to performance modeling and analysis of distributed computing systems
+373,0.21309715509414673,0.4625012278556824,0.8607568740844727,4,Oliver,Nuria,"For contributions in probabilistic multimodal models of human behavior and uses in intelligent, interactive systems"
+374,0.5032013058662415,0.24349373579025269,0.2712130844593048,1,Mccallum,Andrew K.,"For contributions to machine learning with structured data, and innovations in scientific communication"
+375,0.8697811961174011,0.5256490707397461,0.468502938747406,3,Birkedal,Lars,For contributions to the semantic and logical foundations of compilers and program verification systems
+376,0.6394824385643005,0.3666937053203583,0.8246682286262512,6,Mutlu,Onur,"For contributions to computer architecture research, especially in memory systems"
+377,0.4161022901535034,0.2950100600719452,0.48095622658729553,9,Yang,Qiang,For contributions to artificial intelligence and data mining
+378,0.07949551939964294,0.5369572639465332,0.37589073181152344,2,Ramamoorthi,Ravi,For contributions to computer graphics rendering and physics-based computer vision
+379,0.652511715888977,0.9864566922187805,0.5210573077201843,0,Fujimoto,Richard M,For contributions to parallel and distributed discrete event simulation
+380,0.5987488031387329,0.8236222267150879,0.25084221363067627,5,Goldwasser,Shafi,For transformative work that laid the complexity-theoretic foundations for the science of cryptography
+381,0.18810635805130005,0.5867348909378052,0.5241783857345581,2,Chang,Shih Fu,For contributions to large-scale multimedia content recognition and multimedia information retrieval
+382,0.5987415313720703,0.8236271739006042,0.25082072615623474,5,Micali,Silvio,For transformative work that laid the complexity-theoretic foundations for the science of cryptography
+383,0.08034801483154297,0.5746045112609863,0.3777708411216736,2,Seitz,Steve,For contributions to computer vision and computer graphics
+384,0.12047228217124939,0.6131141185760498,0.8018681406974792,4,Dray,Susan,For co-founding ACM SIGCHI and disseminating exemplary user experience design and evaluation practices worldwide
+385,0.5345997214317322,0.7581785321235657,0.260195255279541,5,Rabin,Tal,"For contributions to foundations of cryptography, including multi-party computations, signatures, and threshold and proactive protocol design"
+386,0.2309669554233551,0.589685320854187,0.11020281910896301,8,Lozano-Perez,Tomas,"For contributions to robotics, and motion planning, geometric algorithms, and their applications"
+387,0.6190439462661743,0.6599045395851135,0.05795440077781677,5,Guruswami,Venkatesan,"For contributions to algorithmic coding theory, pseudorandomness, and the complexity of approximate optimization"
+388,0.5382028222084045,0.7143335342407227,0.4637157618999481,0,Lee,Wenke,"For contributions to systems and network security, intrusion and anomaly detection and malware analysis"
+389,0.0924096405506134,0.3628165125846863,0.2641335725784302,2,Ma,Yi,For contributions to theory and application of low-dimensional models for computer vision and pattern recognition
+390,0.1755029261112213,0.6907843351364136,0.8617638349533081,4,Rogers,Yvonne,For contributions to human-computer interaction and the design of human-centered technology
+391,0.5026535391807556,0.7844069004058838,0.557563304901123,0,Perrig,Adrian,For contributions in protocols for network and system security.
+392,0.19739949703216553,0.6454644799232483,0.8730552196502686,4,Druin,Allison,For contributions to creating information and computing technologies with and for children.
+393,0.6556247472763062,0.39015570282936096,0.8377325534820557,6,Seznec,Andre,For contributions to branch prediction and cache memory design.
+394,0.6216050386428833,0.8583403825759888,0.5250494480133057,0,Kermarrec,Anne-Marie,For contributions to large-scale distributed computing.
+395,0.6569116711616516,0.42011693120002747,0.38764628767967224,1,Hey,Anthony,For leadership in high performance computing and eScience.
+396,0.4921196699142456,0.22624874114990234,0.40587273240089417,1,Brodley,Carla,For applications of machine learning and for increasing participation of women in computer science.
+397,0.08046048879623413,0.5913411974906921,0.38381853699684143,2,Tomasi,Carlo,For contributions in computer vision.
+398,0.6106976270675659,0.4962582588195801,0.6235224008560181,6,Kozyrakis,Christos,For contributions to transactional memory and data center architecture.
+399,0.5006802678108215,0.7328603267669678,0.38160428404808044,0,Boneh,Dan,For contributions to cryptography and computer security.
+400,0.8327536582946777,0.3271107077598572,0.5317064523696899,3,Jackson,Daniel,For contributions to software modeling and the creation of the modeling language Alloy.
+401,0.5884482860565186,0.5548032522201538,0.24404022097587585,5,Peleg,David,For contributions to distributed computing and graph algorithms.
+402,0.439454585313797,0.02318522334098816,0.6719423532485962,7,Raschid,Louiqa,"For data management and integration in non-traditional domains including biomedicine, finance, and humanitarian applications."
+403,0.16264650225639343,0.7127587795257568,0.8009899854660034,4,Jacob,Robert J.K.,"For contributions to human-computer interaction, particularly new interaction modes and novel user interface software formalisms."
+404,0.43102285265922546,0.6541786193847656,0.9514970183372498,4,Patel,Shwetak N,"For contributions to sustainability sensing, low-power wireless sensing, and mobile health."
+405,0.5980210304260254,0.5010477900505066,0.6200050115585327,6,Sengupta,Sudipta,"For contributions to cloud networking, storage, and data management."
+406,0.6887345314025879,0.36347153782844543,0.6740738153457642,6,Mowry,Todd C,For contributions to software prefetching and thread-level speculation.
+407,0.0,0.4941103458404541,0.06167179346084595,2,Demaine,Erik,"For contributions to geometric computing, data structures, and graph algorithms."
+408,0.07979613542556763,0.5136067867279053,0.477258563041687,2,Durand,Fredo,For contributions to computational photography and computer graphics rendering.
+409,0.8508678674697876,0.41176146268844604,0.6319607496261597,3,Ramalingam,Ganesan,For contributions to static program analysis.
+410,0.3765450119972229,0.13296586275100708,0.5383898019790649,9,Hendler,James,For contributions to artificial intelligence and the development of the Semantic Web.
+411,0.2840768098831177,0.6587786078453064,0.8766682147979736,4,Landay,James,"For contributions to human-computer interaction, with a focus on user interface design tools and ubiquitous computing."
+412,0.37568730115890503,0.6102251410484314,0.7190084457397461,4,Flinn,Jason,For contributions to mobile computing and reliable distributed systems.
+413,0.5188354849815369,0.9125049114227295,0.6069879531860352,0,Lyles,Joseph Bryan,"For contributions to local network technology, internet measurement, and research."
+414,0.18852895498275757,0.40434396266937256,0.8632422089576721,4,Cassell,Justine,For contributions to human-computer interaction and advocacy for empowerment and voice through technology.
+415,0.8901351690292358,0.37505990266799927,0.5831713676452637,3,Leino,K. Rustan M.,For contributions to making program verification accessible and practical.
+416,0.7130546569824219,0.49704959988594055,0.954723596572876,6,Benini,Luca,For contributions to the design of low power multi-processor systems.
+417,0.2693853974342346,0.6164824962615967,0.08072024583816528,8,Veloso,Manuela,"For contributions to the field of artificial intelligence, in particular in planning, learning, multi-agent systems, and robotics."
+418,0.5398507118225098,0.10029289126396179,0.7307325005531311,7,Kersten,Martin,For the design and implementation of column-store and main-memory database systems.
+419,0.5838310122489929,0.5636157393455505,0.1963055431842804,5,Saks,Michael E,"For contributions to computational complexity, theory of distributed computing, and design and analysis of algorithms."
+420,0.6257059574127197,0.5297466516494751,0.13472458720207214,5,Henzinger,Monika,For contributions to computing theory and its practical application.
+421,0.475735068321228,0.8534015417098999,0.6091035604476929,0,Feamster,Nick,For data-driven studies of Internet security and Internet censorship.
+422,0.610599935054779,0.5021425485610962,0.109171062707901,5,Alon,Noga,"For contributions in the study of expander graphs, derandomization and streaming algorithms.
+"
+423,0.4975363612174988,0.8654941916465759,0.5831929445266724,0,Barford,Paul,For contributions to Internet measurement and analysis.
+424,0.47842657566070557,0.740181565284729,0.43850961327552795,0,Van Oorschot,Paul,"For contributions to applied cryptography, authentication and computer security."
+425,0.18214792013168335,0.6852126121520996,0.8517475724220276,4,Sellen,Abigail,For contributions to human-computer interaction and the design of human-centered technology.
+426,0.02534586191177368,0.5455372333526611,0.4205048382282257,2,Rushmeier,Holly E,"For work on global illumination, material capture, and display of high-dynamic-range images."
+427,0.7099398970603943,0.16451212763786316,0.30481821298599243,1,Kwiatkowska,Marta,For contributions to the theory and practice of probabilistic verification.
+428,0.538451611995697,0.9364123344421387,0.6245414018630981,0,Perlman,Radia,For contributions to the theory and practice of Internet routing and bridging protocols.
+429,0.634881854057312,0.5494401454925537,0.8098929524421692,6,Gupta,Rajesh,For contributions in design of embedded systems and hardware-software codesign.
+430,0.6894511580467224,0.20030775666236877,0.5662584900856018,1,Kannan,Ravi,For contributions to the field of theoretical computer science.
+431,0.6622806787490845,0.565261721611023,0.6978176832199097,6,Bianchini,Ricardo,"For contributions to power, energy, and thermal management of servers and datacenters."
+432,0.5584591031074524,0.1618308424949646,0.4851178228855133,1,Grossman,Robert L.,"For contributions to data science, data intensive computing and data mining."
+433,0.7542943954467773,0.42577046155929565,0.8206536769866943,6,Sapatnekar,Sachin S.,For contributions to the enhancement of performance and reliability in integrated circuits.
+434,0.19972586631774902,0.43070948123931885,0.8618521690368652,4,Oviatt,Sharon,"For contributions to the empirical and theoretical foundations of multimodal systems, and to human-centered computer interfaces."
+435,0.9739292860031128,0.4165477156639099,0.5323768854141235,3,Jha,Somesh,"For contributions to verification, programming languages, and software engineering."
+436,0.9060494899749756,0.44983094930648804,0.6804260015487671,3,Blackburn,Stephen,For contributions to memory management in programming languages.
+437,0.6632376909255981,0.4550308585166931,0.8350663185119629,6,Mudge,Trevor,For contributions to power aware computer architecture.
+438,0.6391155123710632,0.41189175844192505,0.3913780450820923,1,Taylor,Valerie,For leadership in broadening participation in computing.
+439,0.3528609871864319,0.5858583450317383,0.7523858547210693,4,Padmanabhan,Venkata,For research contributions and professional leadership in networked and mobile computing systems.
+440,0.08469724655151367,0.5078034400939941,0.4817015826702118,2,Freeman,William,"For contributions to low-level computer vision, machine learning, and computer graphics."
+441,0.3649747669696808,0.373279333114624,0.7598519921302795,4,Huang,Xuedong,For contributions to spoken language processing.
+442,0.32044291496276855,0.10462746024131775,0.5045042037963867,9,Gil,Yolanda,For leadership in advancing the use of artificial intelligence in support of science and for service to the community.
+443,0.4162605404853821,0.27931562066078186,0.47577959299087524,9,Zhou,Zhi-Hua,For contributions to machine learning and data mining.
+444,0.5019433498382568,0.06475052237510681,0.6962589025497437,7,Ailamaki,Anastasia,"For contributions to the design, implementation, and evaluation of modern database systems."
+445,0.5123451352119446,0.20199298858642578,0.5758938193321228,7,Schuster,Assaf,For contributions to cloud computing.
+446,0.63373202085495,0.4853644073009491,0.6305797100067139,6,Falsafi,Babak,For contributions to multiprocessor and memory architecture design and evaluation.
+447,0.3998008072376251,0.25820446014404297,0.48548421263694763,9,Liu,Bing,"For contributions to knowledge discovery and data mining, opinion mining, and sentiment analysis."
+448,0.43656641244888306,0.28192979097366333,0.45807281136512756,9,Lin,Chih-Jen,For contributions to the theory and practice of machine learning and data mining.
+449,0.5642544031143188,0.8434109091758728,0.1424887478351593,5,Dwork,Cynthia,"For contributions to the science of database privacy, cryptography, and distributed computing."
+450,0.5390633344650269,0.26805514097213745,0.22313439846038818,1,Blei,David M.,For contributions to the theory and practice of probabilistic topic modeling and Bayesian machine learning.
+451,0.5774129629135132,0.5999451875686646,0.8151819705963135,6,Chang,Naehyuck,For contributions to low-power computing systems.
+452,0.6769328117370605,0.8151369690895081,0.4480710029602051,0,Rodriguez,Pablo,For contributions to content distribution architectures in peer-to-peer networks.
+453,0.000991135835647583,0.4861796796321869,0.14686349034309387,2,Indyk,Piotr,"For contributions to high-dimensional geometric computing, streaming/sketching algorithms, and the Sparse Fourier Transform."
+454,0.4922585189342499,0.24961936473846436,0.5490838289260864,9,Pei,Jian,"For contributions to the foundation, methodology and applications of data mining."
+455,0.22113707661628723,0.641219437122345,0.7766176462173462,4,Czerwinski,Mary P.,For contributions to human-computer interaction and leadership in the CHI community.
+456,0.3194201588630676,0.3243567943572998,0.7176272869110107,9,Radev,Dragomir R,For contributions to natural language processing and computational linguistics
+457,0.30461275577545166,0.6441324949264526,0.9176416397094727,4,Mynatt,Elizabeth D.,For contributions to human-centered computing and to the development of health information technologies.
+458,0.8676336407661438,0.5208908915519714,0.47329309582710266,3,Pfenning,Frank,For contributions to the logical foundations of automatic theorem proving and types for programming languages.
+459,0.31986016035079956,0.014507114887237549,0.48319941759109497,9,De Giacomo,Giuseppe,"For contributions to description logics, data management, and verification of data-driven processes"
+460,0.5027914047241211,0.1625552475452423,0.38962483406066895,1,Chen,Hsinchun,For contributions to the research and development of security informatics and health informatics systems.
+461,0.48927122354507446,0.06917029619216919,0.6978646516799927,7,Haritsa,Jayant R,For contributions to the theory and practice of data management systems.
+462,0.32786768674850464,0.12991157174110413,0.41844862699508667,9,Pearl,Judea,For contributions to artificial intelligence through the development of a calculus for probabilistic and causal reasoning.
+463,0.36111730337142944,0.34944480657577515,0.752729594707489,4,Hirschberg,Julia,For contributions to spoken language processing.
+464,0.46112534403800964,0.8225178122520447,0.5504570603370667,0,Fall,Kevin,For contributions to delay-tolerant networking.
+465,0.6876361966133118,0.5570566058158875,0.8348300457000732,6,Skadron,Kevin,"For contributions in power- and thermal-aware modeling, design and benchmarking of microprocessors, including GPUs."
+466,0.671791672706604,0.1234041154384613,0.3280244469642639,1,Franz,Michael,For contributions to just-in-time compilation and optimization and to compiler techniques for computer security.
+467,0.5047690868377686,0.7657817602157593,0.18448024988174438,5,Luby,Michael George,"For contributions to coding theory, cryptography, parallel algorithms and derandomization."
+468,0.9999998807907104,0.2580457329750061,0.5404787659645081,3,Rung-Tsong Lyu,Michael,For contributions to the theory and practice of software reliability engineering.
+469,0.3458658456802368,0.6138148903846741,0.028302371501922607,8,Wooldridge,Michael,For contributions to multi-agent systems and the formalization of rational action in multi-agent environments.
+470,0.21437793970108032,0.7155391573905945,0.1188364028930664,8,Amato,Nancy M,For contributions to robotics and leadership in broadening participation in computing.
+471,0.8296208381652832,0.6506651043891907,0.5675031542778015,3,Grumberg,Orna,For contributions to research in automated formal verification of hardware and software systems.
+472,0.40922433137893677,0.6967378258705139,0.7130671143531799,4,McDaniel,Patrick,For contributions to computer and mobile systems security.
+473,0.26049724221229553,0.6331958770751953,0.8407676815986633,4,Dourish,Paul,For contributions in social computing and human-computer interaction.
+474,0.03915730118751526,0.5736494660377502,0.26587027311325073,2,Schroeder,Peter,For contributions to computer graphics and geometry processing.
+475,0.47791561484336853,0.046424299478530884,0.7646684646606445,7,Guha,Ramanathan,For contributions to structured data representation and specification and their impact on the Web.
+476,0.44769471883773804,0.3277834951877594,0.1678963005542755,9,Vempala,Santosh,For contributions to algorithms for convex sets and probability distributions.
+477,0.8171762824058533,0.6517107486724854,0.5769294500350952,3,Sagiv,Shmuel,For contributions to the theory and practice of automated analysis and verification of software.
+478,0.9599055051803589,0.38746362924575806,0.5258011221885681,3,Rajamani,Sriram,For contributions to software analysis and defect detection.
+479,0.5854713916778564,0.059317052364349365,0.36989688873291016,1,Warnow,Tandy,"For contributions to mathematical theory, algorithms, and software for large-scale molecular phylogenetics and historical linguistics."
+480,0.7626299858093262,0.8768887519836426,0.6978747248649597,6,Kuo,Tei-Wei,For contributions to performance and reliability enhancement of flash-memory storage systems.
+481,0.4661984443664551,0.7698876857757568,0.3731234669685364,0,Maurer,Ueli M,For contributions to cryptography and information security.
+482,0.48348164558410645,0.7029455900192261,0.3529273271560669,0,Miller,Victor,For contributions to cryptography and software research.
+483,0.4304209351539612,0.07676929235458374,0.6202793717384338,7,Tan,Wang-Chiew,For contributions to data provenance and to the foundations of information integration.
+484,0.8776077032089233,0.4252987504005432,0.5466252565383911,3,Leroy,Xavier,"For contributions to safe, high-performance functional programming languages and compilers, and to compiler verification."
+485,0.4909379184246063,0.6254860162734985,0.6678397059440613,0,Liu,Yunhao,For contributions to sensor networks.
+486,0.10530972480773926,0.5940110087394714,0.49777162075042725,2,Finkelstein,Adam,"For contributions to non-photorealistic rendering, multi-resolution representations, and computer graphics."
+487,0.5844641923904419,0.5920184254646301,0.15143579244613647,5,Borodin,Allan,"For contributions to theoretical computer science in complexity, on-line algorithms, resource tradeoffs, and models of algorithmic paradigms."
+488,0.4628174901008606,0.378181129693985,0.24264496564865112,9,Srinivasan,Aravind,"For contributions to algorithms, probabilistic methods, and networks."
+489,0.5029718279838562,0.024736016988754272,0.6767094135284424,7,Bachman,Charles W,"For contributions to database technology, notably the integrated data store"
+490,0.21968725323677063,0.7485523223876953,0.08386576175689697,8,Rus,Daniela,For contributions to robotics and sensor networks.
+491,0.6174315214157104,0.22059020400047302,0.5885273218154907,1,Ellen,Faith,"For contributions to data structures, and the theory of distributed and parallel computing."
+492,0.346902996301651,0.14867937564849854,0.43773341178894043,9,Horvitz,Eric,"For contributions to artificial intelligence, and human-computer interaction."
+493,0.7023177146911621,0.42972058057785034,0.38562291860580444,1,Guzdial,Mark,"For contributions to computing education, and broadening participation."
+494,0.6593933701515198,0.5453014969825745,0.6822834014892578,6,Ranganathan,Parthasarathy,"For contributions to the areas of energy efficiency and server architectures.
+"
+495,0.13589799404144287,0.576669454574585,0.3619512915611267,2,Grimson,Eric,"For contributions to computer vision, and medical image computing."
+496,0.5135972499847412,0.12815558910369873,0.6507278084754944,7,Afrati,Foto,For contributions to the theory of database systems.
+497,0.782965898513794,0.7112250328063965,0.6356536149978638,6,Heiser,Gernot,For contributions demonstrating that provably correct operating systems are feasible and suitable for real-world use.
+498,0.23992674052715302,0.7488626837730408,0.5144945979118347,2,Schulzrinne,Henning,"For contributions to the design of protocols, applications, and algorithms for Internet multimedia."
+499,0.5077659487724304,0.3165014386177063,0.27464133501052856,1,Dhillon,Inderjit,"For contributions to large-scale data analysis, machine learning and computational mathematics."
